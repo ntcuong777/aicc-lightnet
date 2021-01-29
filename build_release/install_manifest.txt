@@ -1,0 +1,10 @@
+/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so
+/home/cuong/AICC-darknet/aicc-lightnet/include/darknet/darknet.h
+/home/cuong/AICC-darknet/aicc-lightnet/include/darknet/yolo_v2_class.hpp
+/home/cuong/AICC-darknet/aicc-lightnet/uselib
+/home/cuong/AICC-darknet/aicc-lightnet/darknet
+/home/cuong/AICC-darknet/aicc-lightnet/uselib_track
+/home/cuong/AICC-darknet/aicc-lightnet/share/darknet/DarknetTargets.cmake
+/home/cuong/AICC-darknet/aicc-lightnet/share/darknet/DarknetTargets-release.cmake
+/home/cuong/AICC-darknet/aicc-lightnet/share/darknet/DarknetConfig.cmake
+/home/cuong/AICC-darknet/aicc-lightnet/share/darknet/DarknetConfigVersion.cmake

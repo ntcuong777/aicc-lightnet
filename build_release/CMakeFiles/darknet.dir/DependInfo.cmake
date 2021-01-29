@@ -1,0 +1,154 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  "CUDA"
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/activation_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/activations.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/activations.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/art.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/art.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/avgpool_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/batchnorm_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/blas.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/blas.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/box.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/box.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/captcha.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/captcha.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/cifar.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/cifar.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/classifier.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/classifier.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/coco.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/coco.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/col2im.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/col2im.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/compare.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/compare.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/connected_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/conv_lstm_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/conv_lstm_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/convolutional_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/cost_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/cpu_gemm.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/cpu_gemm.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/crnn_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/crop_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/dark_cuda.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/darknet.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/data.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/data.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/deconvolutional_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/demo.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/demo.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/detection_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/detector.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/detector.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/dice.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/dice.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/dropout_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/gaussian_yolo_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/gemm.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/gemm.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/go.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/go.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/gru_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/im2col.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/im2col.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/image.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/image.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/list.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/list.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/local_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/lstm_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/lstm_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/matrix.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/matrix.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/maxpool_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/network.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/network.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/nightmare.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/nightmare.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/normalization_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/option_list.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/option_list.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/parser.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/parser.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/region_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/reorg_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/reorg_old_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/reorg_old_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/rnn.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/rnn.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/rnn_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/rnn_vid.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/rnn_vid.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/route_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/sam_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/sam_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/scale_channels_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/scale_channels_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/shortcut_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/softmax_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/super.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/super.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/swag.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/swag.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/tag.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/tag.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/tree.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/tree.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/upsample_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/upsample_layer.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/utils.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/utils.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/voxel.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/voxel.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/writing.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/writing.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/yolo.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/yolo.c.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/yolo_layer.c" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/yolo_layer.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "CUDNN"
+  "GPU"
+  "OPENCV"
+  "USE_CMAKE_LIBS"
+  )
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  "../3rdparty/stb/include"
+  "/usr/local/cuda/targets/x86_64-linux/include"
+  "/usr/local/include/opencv4"
+  )
+set(CMAKE_DEPENDS_CHECK_CUDA
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/activation_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/activation_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/blas_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/blas_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/col2im_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/col2im_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/convolutional_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/im2col_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/im2col_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/network_kernels.cu" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/network_kernels.cu.o"
+  )
+set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CUDA
+  "CUDNN"
+  "GPU"
+  "OPENCV"
+  "USE_CMAKE_LIBS"
+  )
+
+# The include file search paths:
+set(CMAKE_CUDA_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  "../3rdparty/stb/include"
+  "/usr/local/cuda/targets/x86_64-linux/include"
+  "/usr/local/include/opencv4"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.cpp" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/http_stream.cpp.o"
+  "/home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.cpp" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/darknet.dir/src/image_opencv.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "CUDNN"
+  "GPU"
+  "OPENCV"
+  "USE_CMAKE_LIBS"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  "../3rdparty/stb/include"
+  "/usr/local/cuda/targets/x86_64-linux/include"
+  "/usr/local/include/opencv4"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
