@@ -1,4 +1,4 @@
-# Yolo v4, v3 and v2 for Windows and Linux
+# Yolo v4, v3 and v2 for Windows and Linux (This compiled version uses opencv-4.5.1 with opencv_contrib for 4.5.1)
 
 ## (neural networks for object detection)
 
