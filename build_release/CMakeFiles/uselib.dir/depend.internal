@@ -3,7 +3,7 @@
 
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o
  ../include/yolo_v2_class.hpp
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo_console_dll.cpp
+ /home/cuong/aicc-lightnet/src/yolo_console_dll.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -41,9 +41,6 @@ CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o
  /usr/local/include/opencv4/opencv2/core/utils/tls.hpp
  /usr/local/include/opencv4/opencv2/core/version.hpp
  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
- /usr/local/include/opencv4/opencv2/cudaarithm.hpp
- /usr/local/include/opencv4/opencv2/cudaimgproc.hpp
- /usr/local/include/opencv4/opencv2/cudaoptflow.hpp
  /usr/local/include/opencv4/opencv2/dnn.hpp
  /usr/local/include/opencv4/opencv2/dnn/dict.hpp
  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp
@@ -89,7 +86,6 @@ CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o
  /usr/local/include/opencv4/opencv2/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/imgproc.hpp
  /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
- /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/imgproc/types_c.h
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp

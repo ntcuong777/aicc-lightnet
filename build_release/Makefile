@@ -70,10 +70,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/AICC-darknet/aicc-lightnet
+CMAKE_SOURCE_DIR = /home/cuong/aicc-lightnet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/AICC-darknet/aicc-lightnet/build_release
+CMAKE_BINARY_DIR = /home/cuong/aicc-lightnet/build_release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -114,15 +114,16 @@ install/fast: preinstall/fast
 	/usr/local/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"dev\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -135,22 +136,21 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"dev\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles /home/cuong/AICC-darknet/aicc-lightnet/build_release//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles /home/cuong/aicc-lightnet/build_release//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -179,32 +179,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named uselib_track
-
-# Build rule for target.
-uselib_track: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uselib_track
-.PHONY : uselib_track
-
-# fast build rule for target.
-uselib_track/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/build
-.PHONY : uselib_track/fast
-
-#=============================================================================
-# Target rules for targets named dark
-
-# Build rule for target.
-dark: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dark
-.PHONY : dark
-
-# fast build rule for target.
-dark/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build
-.PHONY : dark/fast
-
-#=============================================================================
 # Target rules for targets named uselib
 
 # Build rule for target.
@@ -230,14 +204,27 @@ darknet/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/build
 .PHONY : darknet/fast
 
+#=============================================================================
+# Target rules for targets named dark
+
+# Build rule for target.
+dark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dark
+.PHONY : dark
+
+# fast build rule for target.
+dark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build
+.PHONY : dark/fast
+
 src/activation_kernels.o: src/activation_kernels.cu.o
 
 .PHONY : src/activation_kernels.o
 
 # target to build an object file
 src/activation_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.o
 .PHONY : src/activation_kernels.cu.o
 
 src/activation_kernels.i: src/activation_kernels.cu.i
@@ -246,8 +233,8 @@ src/activation_kernels.i: src/activation_kernels.cu.i
 
 # target to preprocess a source file
 src/activation_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.i
 .PHONY : src/activation_kernels.cu.i
 
 src/activation_kernels.s: src/activation_kernels.cu.s
@@ -256,8 +243,8 @@ src/activation_kernels.s: src/activation_kernels.cu.s
 
 # target to generate assembly for a file
 src/activation_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_kernels.cu.s
 .PHONY : src/activation_kernels.cu.s
 
 src/activation_layer.o: src/activation_layer.c.o
@@ -266,8 +253,8 @@ src/activation_layer.o: src/activation_layer.c.o
 
 # target to build an object file
 src/activation_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.o
 .PHONY : src/activation_layer.c.o
 
 src/activation_layer.i: src/activation_layer.c.i
@@ -276,8 +263,8 @@ src/activation_layer.i: src/activation_layer.c.i
 
 # target to preprocess a source file
 src/activation_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.i
 .PHONY : src/activation_layer.c.i
 
 src/activation_layer.s: src/activation_layer.c.s
@@ -286,8 +273,8 @@ src/activation_layer.s: src/activation_layer.c.s
 
 # target to generate assembly for a file
 src/activation_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activation_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activation_layer.c.s
 .PHONY : src/activation_layer.c.s
 
 src/activations.o: src/activations.c.o
@@ -296,8 +283,8 @@ src/activations.o: src/activations.c.o
 
 # target to build an object file
 src/activations.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activations.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.o
 .PHONY : src/activations.c.o
 
 src/activations.i: src/activations.c.i
@@ -306,8 +293,8 @@ src/activations.i: src/activations.c.i
 
 # target to preprocess a source file
 src/activations.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activations.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.i
 .PHONY : src/activations.c.i
 
 src/activations.s: src/activations.c.s
@@ -316,8 +303,8 @@ src/activations.s: src/activations.c.s
 
 # target to generate assembly for a file
 src/activations.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/activations.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/activations.c.s
 .PHONY : src/activations.c.s
 
 src/art.o: src/art.c.o
@@ -326,8 +313,8 @@ src/art.o: src/art.c.o
 
 # target to build an object file
 src/art.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/art.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.o
 .PHONY : src/art.c.o
 
 src/art.i: src/art.c.i
@@ -336,8 +323,8 @@ src/art.i: src/art.c.i
 
 # target to preprocess a source file
 src/art.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/art.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.i
 .PHONY : src/art.c.i
 
 src/art.s: src/art.c.s
@@ -346,8 +333,8 @@ src/art.s: src/art.c.s
 
 # target to generate assembly for a file
 src/art.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/art.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/art.c.s
 .PHONY : src/art.c.s
 
 src/avgpool_layer.o: src/avgpool_layer.c.o
@@ -356,8 +343,8 @@ src/avgpool_layer.o: src/avgpool_layer.c.o
 
 # target to build an object file
 src/avgpool_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.o
 .PHONY : src/avgpool_layer.c.o
 
 src/avgpool_layer.i: src/avgpool_layer.c.i
@@ -366,8 +353,8 @@ src/avgpool_layer.i: src/avgpool_layer.c.i
 
 # target to preprocess a source file
 src/avgpool_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.i
 .PHONY : src/avgpool_layer.c.i
 
 src/avgpool_layer.s: src/avgpool_layer.c.s
@@ -376,8 +363,8 @@ src/avgpool_layer.s: src/avgpool_layer.c.s
 
 # target to generate assembly for a file
 src/avgpool_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer.c.s
 .PHONY : src/avgpool_layer.c.s
 
 src/avgpool_layer_kernels.o: src/avgpool_layer_kernels.cu.o
@@ -386,8 +373,8 @@ src/avgpool_layer_kernels.o: src/avgpool_layer_kernels.cu.o
 
 # target to build an object file
 src/avgpool_layer_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.o
 .PHONY : src/avgpool_layer_kernels.cu.o
 
 src/avgpool_layer_kernels.i: src/avgpool_layer_kernels.cu.i
@@ -396,8 +383,8 @@ src/avgpool_layer_kernels.i: src/avgpool_layer_kernels.cu.i
 
 # target to preprocess a source file
 src/avgpool_layer_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.i
 .PHONY : src/avgpool_layer_kernels.cu.i
 
 src/avgpool_layer_kernels.s: src/avgpool_layer_kernels.cu.s
@@ -406,8 +393,8 @@ src/avgpool_layer_kernels.s: src/avgpool_layer_kernels.cu.s
 
 # target to generate assembly for a file
 src/avgpool_layer_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/avgpool_layer_kernels.cu.s
 .PHONY : src/avgpool_layer_kernels.cu.s
 
 src/batchnorm_layer.o: src/batchnorm_layer.c.o
@@ -416,8 +403,8 @@ src/batchnorm_layer.o: src/batchnorm_layer.c.o
 
 # target to build an object file
 src/batchnorm_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/batchnorm_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.o
 .PHONY : src/batchnorm_layer.c.o
 
 src/batchnorm_layer.i: src/batchnorm_layer.c.i
@@ -426,8 +413,8 @@ src/batchnorm_layer.i: src/batchnorm_layer.c.i
 
 # target to preprocess a source file
 src/batchnorm_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/batchnorm_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.i
 .PHONY : src/batchnorm_layer.c.i
 
 src/batchnorm_layer.s: src/batchnorm_layer.c.s
@@ -436,8 +423,8 @@ src/batchnorm_layer.s: src/batchnorm_layer.c.s
 
 # target to generate assembly for a file
 src/batchnorm_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/batchnorm_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/batchnorm_layer.c.s
 .PHONY : src/batchnorm_layer.c.s
 
 src/blas.o: src/blas.c.o
@@ -446,8 +433,8 @@ src/blas.o: src/blas.c.o
 
 # target to build an object file
 src/blas.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.o
 .PHONY : src/blas.c.o
 
 src/blas.i: src/blas.c.i
@@ -456,8 +443,8 @@ src/blas.i: src/blas.c.i
 
 # target to preprocess a source file
 src/blas.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.i
 .PHONY : src/blas.c.i
 
 src/blas.s: src/blas.c.s
@@ -466,8 +453,8 @@ src/blas.s: src/blas.c.s
 
 # target to generate assembly for a file
 src/blas.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas.c.s
 .PHONY : src/blas.c.s
 
 src/blas_kernels.o: src/blas_kernels.cu.o
@@ -476,8 +463,8 @@ src/blas_kernels.o: src/blas_kernels.cu.o
 
 # target to build an object file
 src/blas_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.o
 .PHONY : src/blas_kernels.cu.o
 
 src/blas_kernels.i: src/blas_kernels.cu.i
@@ -486,8 +473,8 @@ src/blas_kernels.i: src/blas_kernels.cu.i
 
 # target to preprocess a source file
 src/blas_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.i
 .PHONY : src/blas_kernels.cu.i
 
 src/blas_kernels.s: src/blas_kernels.cu.s
@@ -496,8 +483,8 @@ src/blas_kernels.s: src/blas_kernels.cu.s
 
 # target to generate assembly for a file
 src/blas_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/blas_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/blas_kernels.cu.s
 .PHONY : src/blas_kernels.cu.s
 
 src/box.o: src/box.c.o
@@ -506,8 +493,8 @@ src/box.o: src/box.c.o
 
 # target to build an object file
 src/box.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/box.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.o
 .PHONY : src/box.c.o
 
 src/box.i: src/box.c.i
@@ -516,8 +503,8 @@ src/box.i: src/box.c.i
 
 # target to preprocess a source file
 src/box.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/box.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.i
 .PHONY : src/box.c.i
 
 src/box.s: src/box.c.s
@@ -526,8 +513,8 @@ src/box.s: src/box.c.s
 
 # target to generate assembly for a file
 src/box.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/box.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/box.c.s
 .PHONY : src/box.c.s
 
 src/captcha.o: src/captcha.c.o
@@ -536,8 +523,8 @@ src/captcha.o: src/captcha.c.o
 
 # target to build an object file
 src/captcha.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/captcha.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.o
 .PHONY : src/captcha.c.o
 
 src/captcha.i: src/captcha.c.i
@@ -546,8 +533,8 @@ src/captcha.i: src/captcha.c.i
 
 # target to preprocess a source file
 src/captcha.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/captcha.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.i
 .PHONY : src/captcha.c.i
 
 src/captcha.s: src/captcha.c.s
@@ -556,8 +543,8 @@ src/captcha.s: src/captcha.c.s
 
 # target to generate assembly for a file
 src/captcha.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/captcha.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/captcha.c.s
 .PHONY : src/captcha.c.s
 
 src/cifar.o: src/cifar.c.o
@@ -566,8 +553,8 @@ src/cifar.o: src/cifar.c.o
 
 # target to build an object file
 src/cifar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cifar.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.o
 .PHONY : src/cifar.c.o
 
 src/cifar.i: src/cifar.c.i
@@ -576,8 +563,8 @@ src/cifar.i: src/cifar.c.i
 
 # target to preprocess a source file
 src/cifar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cifar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.i
 .PHONY : src/cifar.c.i
 
 src/cifar.s: src/cifar.c.s
@@ -586,8 +573,8 @@ src/cifar.s: src/cifar.c.s
 
 # target to generate assembly for a file
 src/cifar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cifar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cifar.c.s
 .PHONY : src/cifar.c.s
 
 src/classifier.o: src/classifier.c.o
@@ -596,8 +583,8 @@ src/classifier.o: src/classifier.c.o
 
 # target to build an object file
 src/classifier.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/classifier.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.o
 .PHONY : src/classifier.c.o
 
 src/classifier.i: src/classifier.c.i
@@ -606,8 +593,8 @@ src/classifier.i: src/classifier.c.i
 
 # target to preprocess a source file
 src/classifier.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/classifier.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.i
 .PHONY : src/classifier.c.i
 
 src/classifier.s: src/classifier.c.s
@@ -616,8 +603,8 @@ src/classifier.s: src/classifier.c.s
 
 # target to generate assembly for a file
 src/classifier.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/classifier.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/classifier.c.s
 .PHONY : src/classifier.c.s
 
 src/coco.o: src/coco.c.o
@@ -626,8 +613,8 @@ src/coco.o: src/coco.c.o
 
 # target to build an object file
 src/coco.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/coco.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.o
 .PHONY : src/coco.c.o
 
 src/coco.i: src/coco.c.i
@@ -636,8 +623,8 @@ src/coco.i: src/coco.c.i
 
 # target to preprocess a source file
 src/coco.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/coco.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.i
 .PHONY : src/coco.c.i
 
 src/coco.s: src/coco.c.s
@@ -646,8 +633,8 @@ src/coco.s: src/coco.c.s
 
 # target to generate assembly for a file
 src/coco.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/coco.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/coco.c.s
 .PHONY : src/coco.c.s
 
 src/col2im.o: src/col2im.c.o
@@ -656,8 +643,8 @@ src/col2im.o: src/col2im.c.o
 
 # target to build an object file
 src/col2im.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.o
 .PHONY : src/col2im.c.o
 
 src/col2im.i: src/col2im.c.i
@@ -666,8 +653,8 @@ src/col2im.i: src/col2im.c.i
 
 # target to preprocess a source file
 src/col2im.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.i
 .PHONY : src/col2im.c.i
 
 src/col2im.s: src/col2im.c.s
@@ -676,8 +663,8 @@ src/col2im.s: src/col2im.c.s
 
 # target to generate assembly for a file
 src/col2im.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im.c.s
 .PHONY : src/col2im.c.s
 
 src/col2im_kernels.o: src/col2im_kernels.cu.o
@@ -686,8 +673,8 @@ src/col2im_kernels.o: src/col2im_kernels.cu.o
 
 # target to build an object file
 src/col2im_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.o
 .PHONY : src/col2im_kernels.cu.o
 
 src/col2im_kernels.i: src/col2im_kernels.cu.i
@@ -696,8 +683,8 @@ src/col2im_kernels.i: src/col2im_kernels.cu.i
 
 # target to preprocess a source file
 src/col2im_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.i
 .PHONY : src/col2im_kernels.cu.i
 
 src/col2im_kernels.s: src/col2im_kernels.cu.s
@@ -706,8 +693,8 @@ src/col2im_kernels.s: src/col2im_kernels.cu.s
 
 # target to generate assembly for a file
 src/col2im_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/col2im_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/col2im_kernels.cu.s
 .PHONY : src/col2im_kernels.cu.s
 
 src/compare.o: src/compare.c.o
@@ -716,8 +703,8 @@ src/compare.o: src/compare.c.o
 
 # target to build an object file
 src/compare.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/compare.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.o
 .PHONY : src/compare.c.o
 
 src/compare.i: src/compare.c.i
@@ -726,8 +713,8 @@ src/compare.i: src/compare.c.i
 
 # target to preprocess a source file
 src/compare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/compare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.i
 .PHONY : src/compare.c.i
 
 src/compare.s: src/compare.c.s
@@ -736,8 +723,8 @@ src/compare.s: src/compare.c.s
 
 # target to generate assembly for a file
 src/compare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/compare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/compare.c.s
 .PHONY : src/compare.c.s
 
 src/connected_layer.o: src/connected_layer.c.o
@@ -746,8 +733,8 @@ src/connected_layer.o: src/connected_layer.c.o
 
 # target to build an object file
 src/connected_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/connected_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.o
 .PHONY : src/connected_layer.c.o
 
 src/connected_layer.i: src/connected_layer.c.i
@@ -756,8 +743,8 @@ src/connected_layer.i: src/connected_layer.c.i
 
 # target to preprocess a source file
 src/connected_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/connected_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.i
 .PHONY : src/connected_layer.c.i
 
 src/connected_layer.s: src/connected_layer.c.s
@@ -766,8 +753,8 @@ src/connected_layer.s: src/connected_layer.c.s
 
 # target to generate assembly for a file
 src/connected_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/connected_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/connected_layer.c.s
 .PHONY : src/connected_layer.c.s
 
 src/conv_lstm_layer.o: src/conv_lstm_layer.c.o
@@ -776,8 +763,8 @@ src/conv_lstm_layer.o: src/conv_lstm_layer.c.o
 
 # target to build an object file
 src/conv_lstm_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/conv_lstm_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.o
 .PHONY : src/conv_lstm_layer.c.o
 
 src/conv_lstm_layer.i: src/conv_lstm_layer.c.i
@@ -786,8 +773,8 @@ src/conv_lstm_layer.i: src/conv_lstm_layer.c.i
 
 # target to preprocess a source file
 src/conv_lstm_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/conv_lstm_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.i
 .PHONY : src/conv_lstm_layer.c.i
 
 src/conv_lstm_layer.s: src/conv_lstm_layer.c.s
@@ -796,8 +783,8 @@ src/conv_lstm_layer.s: src/conv_lstm_layer.c.s
 
 # target to generate assembly for a file
 src/conv_lstm_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/conv_lstm_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/conv_lstm_layer.c.s
 .PHONY : src/conv_lstm_layer.c.s
 
 src/convolutional_kernels.o: src/convolutional_kernels.cu.o
@@ -806,8 +793,8 @@ src/convolutional_kernels.o: src/convolutional_kernels.cu.o
 
 # target to build an object file
 src/convolutional_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.o
 .PHONY : src/convolutional_kernels.cu.o
 
 src/convolutional_kernels.i: src/convolutional_kernels.cu.i
@@ -816,8 +803,8 @@ src/convolutional_kernels.i: src/convolutional_kernels.cu.i
 
 # target to preprocess a source file
 src/convolutional_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.i
 .PHONY : src/convolutional_kernels.cu.i
 
 src/convolutional_kernels.s: src/convolutional_kernels.cu.s
@@ -826,8 +813,8 @@ src/convolutional_kernels.s: src/convolutional_kernels.cu.s
 
 # target to generate assembly for a file
 src/convolutional_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_kernels.cu.s
 .PHONY : src/convolutional_kernels.cu.s
 
 src/convolutional_layer.o: src/convolutional_layer.c.o
@@ -836,8 +823,8 @@ src/convolutional_layer.o: src/convolutional_layer.c.o
 
 # target to build an object file
 src/convolutional_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.o
 .PHONY : src/convolutional_layer.c.o
 
 src/convolutional_layer.i: src/convolutional_layer.c.i
@@ -846,8 +833,8 @@ src/convolutional_layer.i: src/convolutional_layer.c.i
 
 # target to preprocess a source file
 src/convolutional_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.i
 .PHONY : src/convolutional_layer.c.i
 
 src/convolutional_layer.s: src/convolutional_layer.c.s
@@ -856,8 +843,8 @@ src/convolutional_layer.s: src/convolutional_layer.c.s
 
 # target to generate assembly for a file
 src/convolutional_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/convolutional_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/convolutional_layer.c.s
 .PHONY : src/convolutional_layer.c.s
 
 src/cost_layer.o: src/cost_layer.c.o
@@ -866,8 +853,8 @@ src/cost_layer.o: src/cost_layer.c.o
 
 # target to build an object file
 src/cost_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cost_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.o
 .PHONY : src/cost_layer.c.o
 
 src/cost_layer.i: src/cost_layer.c.i
@@ -876,8 +863,8 @@ src/cost_layer.i: src/cost_layer.c.i
 
 # target to preprocess a source file
 src/cost_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cost_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.i
 .PHONY : src/cost_layer.c.i
 
 src/cost_layer.s: src/cost_layer.c.s
@@ -886,8 +873,8 @@ src/cost_layer.s: src/cost_layer.c.s
 
 # target to generate assembly for a file
 src/cost_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cost_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cost_layer.c.s
 .PHONY : src/cost_layer.c.s
 
 src/cpu_gemm.o: src/cpu_gemm.c.o
@@ -896,8 +883,8 @@ src/cpu_gemm.o: src/cpu_gemm.c.o
 
 # target to build an object file
 src/cpu_gemm.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cpu_gemm.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.o
 .PHONY : src/cpu_gemm.c.o
 
 src/cpu_gemm.i: src/cpu_gemm.c.i
@@ -906,8 +893,8 @@ src/cpu_gemm.i: src/cpu_gemm.c.i
 
 # target to preprocess a source file
 src/cpu_gemm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cpu_gemm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.i
 .PHONY : src/cpu_gemm.c.i
 
 src/cpu_gemm.s: src/cpu_gemm.c.s
@@ -916,8 +903,8 @@ src/cpu_gemm.s: src/cpu_gemm.c.s
 
 # target to generate assembly for a file
 src/cpu_gemm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/cpu_gemm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/cpu_gemm.c.s
 .PHONY : src/cpu_gemm.c.s
 
 src/crnn_layer.o: src/crnn_layer.c.o
@@ -926,8 +913,8 @@ src/crnn_layer.o: src/crnn_layer.c.o
 
 # target to build an object file
 src/crnn_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crnn_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.o
 .PHONY : src/crnn_layer.c.o
 
 src/crnn_layer.i: src/crnn_layer.c.i
@@ -936,8 +923,8 @@ src/crnn_layer.i: src/crnn_layer.c.i
 
 # target to preprocess a source file
 src/crnn_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crnn_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.i
 .PHONY : src/crnn_layer.c.i
 
 src/crnn_layer.s: src/crnn_layer.c.s
@@ -946,8 +933,8 @@ src/crnn_layer.s: src/crnn_layer.c.s
 
 # target to generate assembly for a file
 src/crnn_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crnn_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crnn_layer.c.s
 .PHONY : src/crnn_layer.c.s
 
 src/crop_layer.o: src/crop_layer.c.o
@@ -956,8 +943,8 @@ src/crop_layer.o: src/crop_layer.c.o
 
 # target to build an object file
 src/crop_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.o
 .PHONY : src/crop_layer.c.o
 
 src/crop_layer.i: src/crop_layer.c.i
@@ -966,8 +953,8 @@ src/crop_layer.i: src/crop_layer.c.i
 
 # target to preprocess a source file
 src/crop_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.i
 .PHONY : src/crop_layer.c.i
 
 src/crop_layer.s: src/crop_layer.c.s
@@ -976,8 +963,8 @@ src/crop_layer.s: src/crop_layer.c.s
 
 # target to generate assembly for a file
 src/crop_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer.c.s
 .PHONY : src/crop_layer.c.s
 
 src/crop_layer_kernels.o: src/crop_layer_kernels.cu.o
@@ -986,8 +973,8 @@ src/crop_layer_kernels.o: src/crop_layer_kernels.cu.o
 
 # target to build an object file
 src/crop_layer_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.o
 .PHONY : src/crop_layer_kernels.cu.o
 
 src/crop_layer_kernels.i: src/crop_layer_kernels.cu.i
@@ -996,8 +983,8 @@ src/crop_layer_kernels.i: src/crop_layer_kernels.cu.i
 
 # target to preprocess a source file
 src/crop_layer_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.i
 .PHONY : src/crop_layer_kernels.cu.i
 
 src/crop_layer_kernels.s: src/crop_layer_kernels.cu.s
@@ -1006,8 +993,8 @@ src/crop_layer_kernels.s: src/crop_layer_kernels.cu.s
 
 # target to generate assembly for a file
 src/crop_layer_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/crop_layer_kernels.cu.s
 .PHONY : src/crop_layer_kernels.cu.s
 
 src/dark_cuda.o: src/dark_cuda.c.o
@@ -1016,8 +1003,8 @@ src/dark_cuda.o: src/dark_cuda.c.o
 
 # target to build an object file
 src/dark_cuda.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dark_cuda.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.o
 .PHONY : src/dark_cuda.c.o
 
 src/dark_cuda.i: src/dark_cuda.c.i
@@ -1026,8 +1013,8 @@ src/dark_cuda.i: src/dark_cuda.c.i
 
 # target to preprocess a source file
 src/dark_cuda.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dark_cuda.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.i
 .PHONY : src/dark_cuda.c.i
 
 src/dark_cuda.s: src/dark_cuda.c.s
@@ -1036,8 +1023,8 @@ src/dark_cuda.s: src/dark_cuda.c.s
 
 # target to generate assembly for a file
 src/dark_cuda.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dark_cuda.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dark_cuda.c.s
 .PHONY : src/dark_cuda.c.s
 
 src/darknet.o: src/darknet.c.o
@@ -1073,8 +1060,8 @@ src/data.o: src/data.c.o
 
 # target to build an object file
 src/data.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/data.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.o
 .PHONY : src/data.c.o
 
 src/data.i: src/data.c.i
@@ -1083,8 +1070,8 @@ src/data.i: src/data.c.i
 
 # target to preprocess a source file
 src/data.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/data.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.i
 .PHONY : src/data.c.i
 
 src/data.s: src/data.c.s
@@ -1093,8 +1080,8 @@ src/data.s: src/data.c.s
 
 # target to generate assembly for a file
 src/data.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/data.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/data.c.s
 .PHONY : src/data.c.s
 
 src/deconvolutional_kernels.o: src/deconvolutional_kernels.cu.o
@@ -1103,8 +1090,8 @@ src/deconvolutional_kernels.o: src/deconvolutional_kernels.cu.o
 
 # target to build an object file
 src/deconvolutional_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.o
 .PHONY : src/deconvolutional_kernels.cu.o
 
 src/deconvolutional_kernels.i: src/deconvolutional_kernels.cu.i
@@ -1113,8 +1100,8 @@ src/deconvolutional_kernels.i: src/deconvolutional_kernels.cu.i
 
 # target to preprocess a source file
 src/deconvolutional_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.i
 .PHONY : src/deconvolutional_kernels.cu.i
 
 src/deconvolutional_kernels.s: src/deconvolutional_kernels.cu.s
@@ -1123,8 +1110,8 @@ src/deconvolutional_kernels.s: src/deconvolutional_kernels.cu.s
 
 # target to generate assembly for a file
 src/deconvolutional_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_kernels.cu.s
 .PHONY : src/deconvolutional_kernels.cu.s
 
 src/deconvolutional_layer.o: src/deconvolutional_layer.c.o
@@ -1133,8 +1120,8 @@ src/deconvolutional_layer.o: src/deconvolutional_layer.c.o
 
 # target to build an object file
 src/deconvolutional_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.o
 .PHONY : src/deconvolutional_layer.c.o
 
 src/deconvolutional_layer.i: src/deconvolutional_layer.c.i
@@ -1143,8 +1130,8 @@ src/deconvolutional_layer.i: src/deconvolutional_layer.c.i
 
 # target to preprocess a source file
 src/deconvolutional_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.i
 .PHONY : src/deconvolutional_layer.c.i
 
 src/deconvolutional_layer.s: src/deconvolutional_layer.c.s
@@ -1153,8 +1140,8 @@ src/deconvolutional_layer.s: src/deconvolutional_layer.c.s
 
 # target to generate assembly for a file
 src/deconvolutional_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/deconvolutional_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/deconvolutional_layer.c.s
 .PHONY : src/deconvolutional_layer.c.s
 
 src/demo.o: src/demo.c.o
@@ -1163,8 +1150,8 @@ src/demo.o: src/demo.c.o
 
 # target to build an object file
 src/demo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/demo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.o
 .PHONY : src/demo.c.o
 
 src/demo.i: src/demo.c.i
@@ -1173,8 +1160,8 @@ src/demo.i: src/demo.c.i
 
 # target to preprocess a source file
 src/demo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/demo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.i
 .PHONY : src/demo.c.i
 
 src/demo.s: src/demo.c.s
@@ -1183,8 +1170,8 @@ src/demo.s: src/demo.c.s
 
 # target to generate assembly for a file
 src/demo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/demo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/demo.c.s
 .PHONY : src/demo.c.s
 
 src/detection_layer.o: src/detection_layer.c.o
@@ -1193,8 +1180,8 @@ src/detection_layer.o: src/detection_layer.c.o
 
 # target to build an object file
 src/detection_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detection_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.o
 .PHONY : src/detection_layer.c.o
 
 src/detection_layer.i: src/detection_layer.c.i
@@ -1203,8 +1190,8 @@ src/detection_layer.i: src/detection_layer.c.i
 
 # target to preprocess a source file
 src/detection_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detection_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.i
 .PHONY : src/detection_layer.c.i
 
 src/detection_layer.s: src/detection_layer.c.s
@@ -1213,8 +1200,8 @@ src/detection_layer.s: src/detection_layer.c.s
 
 # target to generate assembly for a file
 src/detection_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detection_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detection_layer.c.s
 .PHONY : src/detection_layer.c.s
 
 src/detector.o: src/detector.c.o
@@ -1223,8 +1210,8 @@ src/detector.o: src/detector.c.o
 
 # target to build an object file
 src/detector.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detector.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.o
 .PHONY : src/detector.c.o
 
 src/detector.i: src/detector.c.i
@@ -1233,8 +1220,8 @@ src/detector.i: src/detector.c.i
 
 # target to preprocess a source file
 src/detector.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detector.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.i
 .PHONY : src/detector.c.i
 
 src/detector.s: src/detector.c.s
@@ -1243,8 +1230,8 @@ src/detector.s: src/detector.c.s
 
 # target to generate assembly for a file
 src/detector.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/detector.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/detector.c.s
 .PHONY : src/detector.c.s
 
 src/dice.o: src/dice.c.o
@@ -1253,8 +1240,8 @@ src/dice.o: src/dice.c.o
 
 # target to build an object file
 src/dice.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dice.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.o
 .PHONY : src/dice.c.o
 
 src/dice.i: src/dice.c.i
@@ -1263,8 +1250,8 @@ src/dice.i: src/dice.c.i
 
 # target to preprocess a source file
 src/dice.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dice.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.i
 .PHONY : src/dice.c.i
 
 src/dice.s: src/dice.c.s
@@ -1273,8 +1260,8 @@ src/dice.s: src/dice.c.s
 
 # target to generate assembly for a file
 src/dice.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dice.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dice.c.s
 .PHONY : src/dice.c.s
 
 src/dropout_layer.o: src/dropout_layer.c.o
@@ -1283,8 +1270,8 @@ src/dropout_layer.o: src/dropout_layer.c.o
 
 # target to build an object file
 src/dropout_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.o
 .PHONY : src/dropout_layer.c.o
 
 src/dropout_layer.i: src/dropout_layer.c.i
@@ -1293,8 +1280,8 @@ src/dropout_layer.i: src/dropout_layer.c.i
 
 # target to preprocess a source file
 src/dropout_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.i
 .PHONY : src/dropout_layer.c.i
 
 src/dropout_layer.s: src/dropout_layer.c.s
@@ -1303,8 +1290,8 @@ src/dropout_layer.s: src/dropout_layer.c.s
 
 # target to generate assembly for a file
 src/dropout_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer.c.s
 .PHONY : src/dropout_layer.c.s
 
 src/dropout_layer_kernels.o: src/dropout_layer_kernels.cu.o
@@ -1313,8 +1300,8 @@ src/dropout_layer_kernels.o: src/dropout_layer_kernels.cu.o
 
 # target to build an object file
 src/dropout_layer_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.o
 .PHONY : src/dropout_layer_kernels.cu.o
 
 src/dropout_layer_kernels.i: src/dropout_layer_kernels.cu.i
@@ -1323,8 +1310,8 @@ src/dropout_layer_kernels.i: src/dropout_layer_kernels.cu.i
 
 # target to preprocess a source file
 src/dropout_layer_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.i
 .PHONY : src/dropout_layer_kernels.cu.i
 
 src/dropout_layer_kernels.s: src/dropout_layer_kernels.cu.s
@@ -1333,8 +1320,8 @@ src/dropout_layer_kernels.s: src/dropout_layer_kernels.cu.s
 
 # target to generate assembly for a file
 src/dropout_layer_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/dropout_layer_kernels.cu.s
 .PHONY : src/dropout_layer_kernels.cu.s
 
 src/gaussian_yolo_layer.o: src/gaussian_yolo_layer.c.o
@@ -1343,8 +1330,8 @@ src/gaussian_yolo_layer.o: src/gaussian_yolo_layer.c.o
 
 # target to build an object file
 src/gaussian_yolo_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.o
 .PHONY : src/gaussian_yolo_layer.c.o
 
 src/gaussian_yolo_layer.i: src/gaussian_yolo_layer.c.i
@@ -1353,8 +1340,8 @@ src/gaussian_yolo_layer.i: src/gaussian_yolo_layer.c.i
 
 # target to preprocess a source file
 src/gaussian_yolo_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.i
 .PHONY : src/gaussian_yolo_layer.c.i
 
 src/gaussian_yolo_layer.s: src/gaussian_yolo_layer.c.s
@@ -1363,8 +1350,8 @@ src/gaussian_yolo_layer.s: src/gaussian_yolo_layer.c.s
 
 # target to generate assembly for a file
 src/gaussian_yolo_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gaussian_yolo_layer.c.s
 .PHONY : src/gaussian_yolo_layer.c.s
 
 src/gemm.o: src/gemm.c.o
@@ -1373,8 +1360,8 @@ src/gemm.o: src/gemm.c.o
 
 # target to build an object file
 src/gemm.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gemm.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.o
 .PHONY : src/gemm.c.o
 
 src/gemm.i: src/gemm.c.i
@@ -1383,8 +1370,8 @@ src/gemm.i: src/gemm.c.i
 
 # target to preprocess a source file
 src/gemm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gemm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.i
 .PHONY : src/gemm.c.i
 
 src/gemm.s: src/gemm.c.s
@@ -1393,8 +1380,8 @@ src/gemm.s: src/gemm.c.s
 
 # target to generate assembly for a file
 src/gemm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gemm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gemm.c.s
 .PHONY : src/gemm.c.s
 
 src/go.o: src/go.c.o
@@ -1403,8 +1390,8 @@ src/go.o: src/go.c.o
 
 # target to build an object file
 src/go.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/go.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.o
 .PHONY : src/go.c.o
 
 src/go.i: src/go.c.i
@@ -1413,8 +1400,8 @@ src/go.i: src/go.c.i
 
 # target to preprocess a source file
 src/go.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/go.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.i
 .PHONY : src/go.c.i
 
 src/go.s: src/go.c.s
@@ -1423,8 +1410,8 @@ src/go.s: src/go.c.s
 
 # target to generate assembly for a file
 src/go.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/go.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/go.c.s
 .PHONY : src/go.c.s
 
 src/gru_layer.o: src/gru_layer.c.o
@@ -1433,8 +1420,8 @@ src/gru_layer.o: src/gru_layer.c.o
 
 # target to build an object file
 src/gru_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gru_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.o
 .PHONY : src/gru_layer.c.o
 
 src/gru_layer.i: src/gru_layer.c.i
@@ -1443,8 +1430,8 @@ src/gru_layer.i: src/gru_layer.c.i
 
 # target to preprocess a source file
 src/gru_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gru_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.i
 .PHONY : src/gru_layer.c.i
 
 src/gru_layer.s: src/gru_layer.c.s
@@ -1453,8 +1440,8 @@ src/gru_layer.s: src/gru_layer.c.s
 
 # target to generate assembly for a file
 src/gru_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/gru_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/gru_layer.c.s
 .PHONY : src/gru_layer.c.s
 
 src/http_stream.o: src/http_stream.cpp.o
@@ -1463,8 +1450,8 @@ src/http_stream.o: src/http_stream.cpp.o
 
 # target to build an object file
 src/http_stream.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/http_stream.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.o
 .PHONY : src/http_stream.cpp.o
 
 src/http_stream.i: src/http_stream.cpp.i
@@ -1473,8 +1460,8 @@ src/http_stream.i: src/http_stream.cpp.i
 
 # target to preprocess a source file
 src/http_stream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/http_stream.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.i
 .PHONY : src/http_stream.cpp.i
 
 src/http_stream.s: src/http_stream.cpp.s
@@ -1483,8 +1470,8 @@ src/http_stream.s: src/http_stream.cpp.s
 
 # target to generate assembly for a file
 src/http_stream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/http_stream.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/http_stream.cpp.s
 .PHONY : src/http_stream.cpp.s
 
 src/im2col.o: src/im2col.c.o
@@ -1493,8 +1480,8 @@ src/im2col.o: src/im2col.c.o
 
 # target to build an object file
 src/im2col.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.o
 .PHONY : src/im2col.c.o
 
 src/im2col.i: src/im2col.c.i
@@ -1503,8 +1490,8 @@ src/im2col.i: src/im2col.c.i
 
 # target to preprocess a source file
 src/im2col.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.i
 .PHONY : src/im2col.c.i
 
 src/im2col.s: src/im2col.c.s
@@ -1513,8 +1500,8 @@ src/im2col.s: src/im2col.c.s
 
 # target to generate assembly for a file
 src/im2col.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col.c.s
 .PHONY : src/im2col.c.s
 
 src/im2col_kernels.o: src/im2col_kernels.cu.o
@@ -1523,8 +1510,8 @@ src/im2col_kernels.o: src/im2col_kernels.cu.o
 
 # target to build an object file
 src/im2col_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.o
 .PHONY : src/im2col_kernels.cu.o
 
 src/im2col_kernels.i: src/im2col_kernels.cu.i
@@ -1533,8 +1520,8 @@ src/im2col_kernels.i: src/im2col_kernels.cu.i
 
 # target to preprocess a source file
 src/im2col_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.i
 .PHONY : src/im2col_kernels.cu.i
 
 src/im2col_kernels.s: src/im2col_kernels.cu.s
@@ -1543,8 +1530,8 @@ src/im2col_kernels.s: src/im2col_kernels.cu.s
 
 # target to generate assembly for a file
 src/im2col_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/im2col_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/im2col_kernels.cu.s
 .PHONY : src/im2col_kernels.cu.s
 
 src/image.o: src/image.c.o
@@ -1553,8 +1540,8 @@ src/image.o: src/image.c.o
 
 # target to build an object file
 src/image.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.o
 .PHONY : src/image.c.o
 
 src/image.i: src/image.c.i
@@ -1563,8 +1550,8 @@ src/image.i: src/image.c.i
 
 # target to preprocess a source file
 src/image.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.i
 .PHONY : src/image.c.i
 
 src/image.s: src/image.c.s
@@ -1573,8 +1560,8 @@ src/image.s: src/image.c.s
 
 # target to generate assembly for a file
 src/image.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image.c.s
 .PHONY : src/image.c.s
 
 src/image_opencv.o: src/image_opencv.cpp.o
@@ -1583,8 +1570,8 @@ src/image_opencv.o: src/image_opencv.cpp.o
 
 # target to build an object file
 src/image_opencv.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image_opencv.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.o
 .PHONY : src/image_opencv.cpp.o
 
 src/image_opencv.i: src/image_opencv.cpp.i
@@ -1593,8 +1580,8 @@ src/image_opencv.i: src/image_opencv.cpp.i
 
 # target to preprocess a source file
 src/image_opencv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image_opencv.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.i
 .PHONY : src/image_opencv.cpp.i
 
 src/image_opencv.s: src/image_opencv.cpp.s
@@ -1603,8 +1590,8 @@ src/image_opencv.s: src/image_opencv.cpp.s
 
 # target to generate assembly for a file
 src/image_opencv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/image_opencv.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/image_opencv.cpp.s
 .PHONY : src/image_opencv.cpp.s
 
 src/layer.o: src/layer.c.o
@@ -1613,8 +1600,8 @@ src/layer.o: src/layer.c.o
 
 # target to build an object file
 src/layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.o
 .PHONY : src/layer.c.o
 
 src/layer.i: src/layer.c.i
@@ -1623,8 +1610,8 @@ src/layer.i: src/layer.c.i
 
 # target to preprocess a source file
 src/layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.i
 .PHONY : src/layer.c.i
 
 src/layer.s: src/layer.c.s
@@ -1633,8 +1620,8 @@ src/layer.s: src/layer.c.s
 
 # target to generate assembly for a file
 src/layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/layer.c.s
 .PHONY : src/layer.c.s
 
 src/list.o: src/list.c.o
@@ -1643,8 +1630,8 @@ src/list.o: src/list.c.o
 
 # target to build an object file
 src/list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.o
 .PHONY : src/list.c.o
 
 src/list.i: src/list.c.i
@@ -1653,8 +1640,8 @@ src/list.i: src/list.c.i
 
 # target to preprocess a source file
 src/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.i
 .PHONY : src/list.c.i
 
 src/list.s: src/list.c.s
@@ -1663,8 +1650,8 @@ src/list.s: src/list.c.s
 
 # target to generate assembly for a file
 src/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/list.c.s
 .PHONY : src/list.c.s
 
 src/local_layer.o: src/local_layer.c.o
@@ -1673,8 +1660,8 @@ src/local_layer.o: src/local_layer.c.o
 
 # target to build an object file
 src/local_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/local_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.o
 .PHONY : src/local_layer.c.o
 
 src/local_layer.i: src/local_layer.c.i
@@ -1683,8 +1670,8 @@ src/local_layer.i: src/local_layer.c.i
 
 # target to preprocess a source file
 src/local_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/local_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.i
 .PHONY : src/local_layer.c.i
 
 src/local_layer.s: src/local_layer.c.s
@@ -1693,8 +1680,8 @@ src/local_layer.s: src/local_layer.c.s
 
 # target to generate assembly for a file
 src/local_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/local_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/local_layer.c.s
 .PHONY : src/local_layer.c.s
 
 src/lstm_layer.o: src/lstm_layer.c.o
@@ -1703,8 +1690,8 @@ src/lstm_layer.o: src/lstm_layer.c.o
 
 # target to build an object file
 src/lstm_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/lstm_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.o
 .PHONY : src/lstm_layer.c.o
 
 src/lstm_layer.i: src/lstm_layer.c.i
@@ -1713,8 +1700,8 @@ src/lstm_layer.i: src/lstm_layer.c.i
 
 # target to preprocess a source file
 src/lstm_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/lstm_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.i
 .PHONY : src/lstm_layer.c.i
 
 src/lstm_layer.s: src/lstm_layer.c.s
@@ -1723,8 +1710,8 @@ src/lstm_layer.s: src/lstm_layer.c.s
 
 # target to generate assembly for a file
 src/lstm_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/lstm_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/lstm_layer.c.s
 .PHONY : src/lstm_layer.c.s
 
 src/matrix.o: src/matrix.c.o
@@ -1733,8 +1720,8 @@ src/matrix.o: src/matrix.c.o
 
 # target to build an object file
 src/matrix.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/matrix.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.o
 .PHONY : src/matrix.c.o
 
 src/matrix.i: src/matrix.c.i
@@ -1743,8 +1730,8 @@ src/matrix.i: src/matrix.c.i
 
 # target to preprocess a source file
 src/matrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/matrix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.i
 .PHONY : src/matrix.c.i
 
 src/matrix.s: src/matrix.c.s
@@ -1753,8 +1740,8 @@ src/matrix.s: src/matrix.c.s
 
 # target to generate assembly for a file
 src/matrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/matrix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/matrix.c.s
 .PHONY : src/matrix.c.s
 
 src/maxpool_layer.o: src/maxpool_layer.c.o
@@ -1763,8 +1750,8 @@ src/maxpool_layer.o: src/maxpool_layer.c.o
 
 # target to build an object file
 src/maxpool_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.o
 .PHONY : src/maxpool_layer.c.o
 
 src/maxpool_layer.i: src/maxpool_layer.c.i
@@ -1773,8 +1760,8 @@ src/maxpool_layer.i: src/maxpool_layer.c.i
 
 # target to preprocess a source file
 src/maxpool_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.i
 .PHONY : src/maxpool_layer.c.i
 
 src/maxpool_layer.s: src/maxpool_layer.c.s
@@ -1783,8 +1770,8 @@ src/maxpool_layer.s: src/maxpool_layer.c.s
 
 # target to generate assembly for a file
 src/maxpool_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer.c.s
 .PHONY : src/maxpool_layer.c.s
 
 src/maxpool_layer_kernels.o: src/maxpool_layer_kernels.cu.o
@@ -1793,8 +1780,8 @@ src/maxpool_layer_kernels.o: src/maxpool_layer_kernels.cu.o
 
 # target to build an object file
 src/maxpool_layer_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.o
 .PHONY : src/maxpool_layer_kernels.cu.o
 
 src/maxpool_layer_kernels.i: src/maxpool_layer_kernels.cu.i
@@ -1803,8 +1790,8 @@ src/maxpool_layer_kernels.i: src/maxpool_layer_kernels.cu.i
 
 # target to preprocess a source file
 src/maxpool_layer_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.i
 .PHONY : src/maxpool_layer_kernels.cu.i
 
 src/maxpool_layer_kernels.s: src/maxpool_layer_kernels.cu.s
@@ -1813,8 +1800,8 @@ src/maxpool_layer_kernels.s: src/maxpool_layer_kernels.cu.s
 
 # target to generate assembly for a file
 src/maxpool_layer_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/maxpool_layer_kernels.cu.s
 .PHONY : src/maxpool_layer_kernels.cu.s
 
 src/network.o: src/network.c.o
@@ -1823,8 +1810,8 @@ src/network.o: src/network.c.o
 
 # target to build an object file
 src/network.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.o
 .PHONY : src/network.c.o
 
 src/network.i: src/network.c.i
@@ -1833,8 +1820,8 @@ src/network.i: src/network.c.i
 
 # target to preprocess a source file
 src/network.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.i
 .PHONY : src/network.c.i
 
 src/network.s: src/network.c.s
@@ -1843,8 +1830,8 @@ src/network.s: src/network.c.s
 
 # target to generate assembly for a file
 src/network.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network.c.s
 .PHONY : src/network.c.s
 
 src/network_kernels.o: src/network_kernels.cu.o
@@ -1853,8 +1840,8 @@ src/network_kernels.o: src/network_kernels.cu.o
 
 # target to build an object file
 src/network_kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.o
 .PHONY : src/network_kernels.cu.o
 
 src/network_kernels.i: src/network_kernels.cu.i
@@ -1863,8 +1850,8 @@ src/network_kernels.i: src/network_kernels.cu.i
 
 # target to preprocess a source file
 src/network_kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.i
 .PHONY : src/network_kernels.cu.i
 
 src/network_kernels.s: src/network_kernels.cu.s
@@ -1873,8 +1860,8 @@ src/network_kernels.s: src/network_kernels.cu.s
 
 # target to generate assembly for a file
 src/network_kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/network_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/network_kernels.cu.s
 .PHONY : src/network_kernels.cu.s
 
 src/nightmare.o: src/nightmare.c.o
@@ -1883,8 +1870,8 @@ src/nightmare.o: src/nightmare.c.o
 
 # target to build an object file
 src/nightmare.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/nightmare.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.o
 .PHONY : src/nightmare.c.o
 
 src/nightmare.i: src/nightmare.c.i
@@ -1893,8 +1880,8 @@ src/nightmare.i: src/nightmare.c.i
 
 # target to preprocess a source file
 src/nightmare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/nightmare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.i
 .PHONY : src/nightmare.c.i
 
 src/nightmare.s: src/nightmare.c.s
@@ -1903,8 +1890,8 @@ src/nightmare.s: src/nightmare.c.s
 
 # target to generate assembly for a file
 src/nightmare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/nightmare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/nightmare.c.s
 .PHONY : src/nightmare.c.s
 
 src/normalization_layer.o: src/normalization_layer.c.o
@@ -1913,8 +1900,8 @@ src/normalization_layer.o: src/normalization_layer.c.o
 
 # target to build an object file
 src/normalization_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/normalization_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.o
 .PHONY : src/normalization_layer.c.o
 
 src/normalization_layer.i: src/normalization_layer.c.i
@@ -1923,8 +1910,8 @@ src/normalization_layer.i: src/normalization_layer.c.i
 
 # target to preprocess a source file
 src/normalization_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/normalization_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.i
 .PHONY : src/normalization_layer.c.i
 
 src/normalization_layer.s: src/normalization_layer.c.s
@@ -1933,8 +1920,8 @@ src/normalization_layer.s: src/normalization_layer.c.s
 
 # target to generate assembly for a file
 src/normalization_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/normalization_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/normalization_layer.c.s
 .PHONY : src/normalization_layer.c.s
 
 src/option_list.o: src/option_list.c.o
@@ -1943,8 +1930,8 @@ src/option_list.o: src/option_list.c.o
 
 # target to build an object file
 src/option_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/option_list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.o
 .PHONY : src/option_list.c.o
 
 src/option_list.i: src/option_list.c.i
@@ -1953,8 +1940,8 @@ src/option_list.i: src/option_list.c.i
 
 # target to preprocess a source file
 src/option_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/option_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.i
 .PHONY : src/option_list.c.i
 
 src/option_list.s: src/option_list.c.s
@@ -1963,8 +1950,8 @@ src/option_list.s: src/option_list.c.s
 
 # target to generate assembly for a file
 src/option_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/option_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/option_list.c.s
 .PHONY : src/option_list.c.s
 
 src/parser.o: src/parser.c.o
@@ -1973,8 +1960,8 @@ src/parser.o: src/parser.c.o
 
 # target to build an object file
 src/parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/parser.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.o
 .PHONY : src/parser.c.o
 
 src/parser.i: src/parser.c.i
@@ -1983,8 +1970,8 @@ src/parser.i: src/parser.c.i
 
 # target to preprocess a source file
 src/parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/parser.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.i
 .PHONY : src/parser.c.i
 
 src/parser.s: src/parser.c.s
@@ -1993,8 +1980,8 @@ src/parser.s: src/parser.c.s
 
 # target to generate assembly for a file
 src/parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/parser.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/parser.c.s
 .PHONY : src/parser.c.s
 
 src/region_layer.o: src/region_layer.c.o
@@ -2003,8 +1990,8 @@ src/region_layer.o: src/region_layer.c.o
 
 # target to build an object file
 src/region_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/region_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.o
 .PHONY : src/region_layer.c.o
 
 src/region_layer.i: src/region_layer.c.i
@@ -2013,8 +2000,8 @@ src/region_layer.i: src/region_layer.c.i
 
 # target to preprocess a source file
 src/region_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/region_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.i
 .PHONY : src/region_layer.c.i
 
 src/region_layer.s: src/region_layer.c.s
@@ -2023,8 +2010,8 @@ src/region_layer.s: src/region_layer.c.s
 
 # target to generate assembly for a file
 src/region_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/region_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/region_layer.c.s
 .PHONY : src/region_layer.c.s
 
 src/reorg_layer.o: src/reorg_layer.c.o
@@ -2033,8 +2020,8 @@ src/reorg_layer.o: src/reorg_layer.c.o
 
 # target to build an object file
 src/reorg_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.o
 .PHONY : src/reorg_layer.c.o
 
 src/reorg_layer.i: src/reorg_layer.c.i
@@ -2043,8 +2030,8 @@ src/reorg_layer.i: src/reorg_layer.c.i
 
 # target to preprocess a source file
 src/reorg_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.i
 .PHONY : src/reorg_layer.c.i
 
 src/reorg_layer.s: src/reorg_layer.c.s
@@ -2053,8 +2040,8 @@ src/reorg_layer.s: src/reorg_layer.c.s
 
 # target to generate assembly for a file
 src/reorg_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_layer.c.s
 .PHONY : src/reorg_layer.c.s
 
 src/reorg_old_layer.o: src/reorg_old_layer.c.o
@@ -2063,8 +2050,8 @@ src/reorg_old_layer.o: src/reorg_old_layer.c.o
 
 # target to build an object file
 src/reorg_old_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_old_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.o
 .PHONY : src/reorg_old_layer.c.o
 
 src/reorg_old_layer.i: src/reorg_old_layer.c.i
@@ -2073,8 +2060,8 @@ src/reorg_old_layer.i: src/reorg_old_layer.c.i
 
 # target to preprocess a source file
 src/reorg_old_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_old_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.i
 .PHONY : src/reorg_old_layer.c.i
 
 src/reorg_old_layer.s: src/reorg_old_layer.c.s
@@ -2083,8 +2070,8 @@ src/reorg_old_layer.s: src/reorg_old_layer.c.s
 
 # target to generate assembly for a file
 src/reorg_old_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/reorg_old_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/reorg_old_layer.c.s
 .PHONY : src/reorg_old_layer.c.s
 
 src/rnn.o: src/rnn.c.o
@@ -2093,8 +2080,8 @@ src/rnn.o: src/rnn.c.o
 
 # target to build an object file
 src/rnn.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.o
 .PHONY : src/rnn.c.o
 
 src/rnn.i: src/rnn.c.i
@@ -2103,8 +2090,8 @@ src/rnn.i: src/rnn.c.i
 
 # target to preprocess a source file
 src/rnn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.i
 .PHONY : src/rnn.c.i
 
 src/rnn.s: src/rnn.c.s
@@ -2113,8 +2100,8 @@ src/rnn.s: src/rnn.c.s
 
 # target to generate assembly for a file
 src/rnn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn.c.s
 .PHONY : src/rnn.c.s
 
 src/rnn_layer.o: src/rnn_layer.c.o
@@ -2123,8 +2110,8 @@ src/rnn_layer.o: src/rnn_layer.c.o
 
 # target to build an object file
 src/rnn_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.o
 .PHONY : src/rnn_layer.c.o
 
 src/rnn_layer.i: src/rnn_layer.c.i
@@ -2133,8 +2120,8 @@ src/rnn_layer.i: src/rnn_layer.c.i
 
 # target to preprocess a source file
 src/rnn_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.i
 .PHONY : src/rnn_layer.c.i
 
 src/rnn_layer.s: src/rnn_layer.c.s
@@ -2143,8 +2130,8 @@ src/rnn_layer.s: src/rnn_layer.c.s
 
 # target to generate assembly for a file
 src/rnn_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_layer.c.s
 .PHONY : src/rnn_layer.c.s
 
 src/rnn_vid.o: src/rnn_vid.c.o
@@ -2153,8 +2140,8 @@ src/rnn_vid.o: src/rnn_vid.c.o
 
 # target to build an object file
 src/rnn_vid.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_vid.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.o
 .PHONY : src/rnn_vid.c.o
 
 src/rnn_vid.i: src/rnn_vid.c.i
@@ -2163,8 +2150,8 @@ src/rnn_vid.i: src/rnn_vid.c.i
 
 # target to preprocess a source file
 src/rnn_vid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_vid.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.i
 .PHONY : src/rnn_vid.c.i
 
 src/rnn_vid.s: src/rnn_vid.c.s
@@ -2173,8 +2160,8 @@ src/rnn_vid.s: src/rnn_vid.c.s
 
 # target to generate assembly for a file
 src/rnn_vid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/rnn_vid.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/rnn_vid.c.s
 .PHONY : src/rnn_vid.c.s
 
 src/route_layer.o: src/route_layer.c.o
@@ -2183,8 +2170,8 @@ src/route_layer.o: src/route_layer.c.o
 
 # target to build an object file
 src/route_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/route_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.o
 .PHONY : src/route_layer.c.o
 
 src/route_layer.i: src/route_layer.c.i
@@ -2193,8 +2180,8 @@ src/route_layer.i: src/route_layer.c.i
 
 # target to preprocess a source file
 src/route_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/route_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.i
 .PHONY : src/route_layer.c.i
 
 src/route_layer.s: src/route_layer.c.s
@@ -2203,8 +2190,8 @@ src/route_layer.s: src/route_layer.c.s
 
 # target to generate assembly for a file
 src/route_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/route_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/route_layer.c.s
 .PHONY : src/route_layer.c.s
 
 src/sam_layer.o: src/sam_layer.c.o
@@ -2213,8 +2200,8 @@ src/sam_layer.o: src/sam_layer.c.o
 
 # target to build an object file
 src/sam_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/sam_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.o
 .PHONY : src/sam_layer.c.o
 
 src/sam_layer.i: src/sam_layer.c.i
@@ -2223,8 +2210,8 @@ src/sam_layer.i: src/sam_layer.c.i
 
 # target to preprocess a source file
 src/sam_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/sam_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.i
 .PHONY : src/sam_layer.c.i
 
 src/sam_layer.s: src/sam_layer.c.s
@@ -2233,8 +2220,8 @@ src/sam_layer.s: src/sam_layer.c.s
 
 # target to generate assembly for a file
 src/sam_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/sam_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/sam_layer.c.s
 .PHONY : src/sam_layer.c.s
 
 src/scale_channels_layer.o: src/scale_channels_layer.c.o
@@ -2243,8 +2230,8 @@ src/scale_channels_layer.o: src/scale_channels_layer.c.o
 
 # target to build an object file
 src/scale_channels_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/scale_channels_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.o
 .PHONY : src/scale_channels_layer.c.o
 
 src/scale_channels_layer.i: src/scale_channels_layer.c.i
@@ -2253,8 +2240,8 @@ src/scale_channels_layer.i: src/scale_channels_layer.c.i
 
 # target to preprocess a source file
 src/scale_channels_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/scale_channels_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.i
 .PHONY : src/scale_channels_layer.c.i
 
 src/scale_channels_layer.s: src/scale_channels_layer.c.s
@@ -2263,8 +2250,8 @@ src/scale_channels_layer.s: src/scale_channels_layer.c.s
 
 # target to generate assembly for a file
 src/scale_channels_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/scale_channels_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/scale_channels_layer.c.s
 .PHONY : src/scale_channels_layer.c.s
 
 src/shortcut_layer.o: src/shortcut_layer.c.o
@@ -2273,8 +2260,8 @@ src/shortcut_layer.o: src/shortcut_layer.c.o
 
 # target to build an object file
 src/shortcut_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/shortcut_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.o
 .PHONY : src/shortcut_layer.c.o
 
 src/shortcut_layer.i: src/shortcut_layer.c.i
@@ -2283,8 +2270,8 @@ src/shortcut_layer.i: src/shortcut_layer.c.i
 
 # target to preprocess a source file
 src/shortcut_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/shortcut_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.i
 .PHONY : src/shortcut_layer.c.i
 
 src/shortcut_layer.s: src/shortcut_layer.c.s
@@ -2293,8 +2280,8 @@ src/shortcut_layer.s: src/shortcut_layer.c.s
 
 # target to generate assembly for a file
 src/shortcut_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/shortcut_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/shortcut_layer.c.s
 .PHONY : src/shortcut_layer.c.s
 
 src/softmax_layer.o: src/softmax_layer.c.o
@@ -2303,8 +2290,8 @@ src/softmax_layer.o: src/softmax_layer.c.o
 
 # target to build an object file
 src/softmax_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/softmax_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.o
 .PHONY : src/softmax_layer.c.o
 
 src/softmax_layer.i: src/softmax_layer.c.i
@@ -2313,8 +2300,8 @@ src/softmax_layer.i: src/softmax_layer.c.i
 
 # target to preprocess a source file
 src/softmax_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/softmax_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.i
 .PHONY : src/softmax_layer.c.i
 
 src/softmax_layer.s: src/softmax_layer.c.s
@@ -2323,8 +2310,8 @@ src/softmax_layer.s: src/softmax_layer.c.s
 
 # target to generate assembly for a file
 src/softmax_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/softmax_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/softmax_layer.c.s
 .PHONY : src/softmax_layer.c.s
 
 src/super.o: src/super.c.o
@@ -2333,8 +2320,8 @@ src/super.o: src/super.c.o
 
 # target to build an object file
 src/super.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/super.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.o
 .PHONY : src/super.c.o
 
 src/super.i: src/super.c.i
@@ -2343,8 +2330,8 @@ src/super.i: src/super.c.i
 
 # target to preprocess a source file
 src/super.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/super.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.i
 .PHONY : src/super.c.i
 
 src/super.s: src/super.c.s
@@ -2353,8 +2340,8 @@ src/super.s: src/super.c.s
 
 # target to generate assembly for a file
 src/super.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/super.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/super.c.s
 .PHONY : src/super.c.s
 
 src/swag.o: src/swag.c.o
@@ -2363,8 +2350,8 @@ src/swag.o: src/swag.c.o
 
 # target to build an object file
 src/swag.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/swag.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.o
 .PHONY : src/swag.c.o
 
 src/swag.i: src/swag.c.i
@@ -2373,8 +2360,8 @@ src/swag.i: src/swag.c.i
 
 # target to preprocess a source file
 src/swag.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/swag.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.i
 .PHONY : src/swag.c.i
 
 src/swag.s: src/swag.c.s
@@ -2383,8 +2370,8 @@ src/swag.s: src/swag.c.s
 
 # target to generate assembly for a file
 src/swag.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/swag.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/swag.c.s
 .PHONY : src/swag.c.s
 
 src/tag.o: src/tag.c.o
@@ -2393,8 +2380,8 @@ src/tag.o: src/tag.c.o
 
 # target to build an object file
 src/tag.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tag.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.o
 .PHONY : src/tag.c.o
 
 src/tag.i: src/tag.c.i
@@ -2403,8 +2390,8 @@ src/tag.i: src/tag.c.i
 
 # target to preprocess a source file
 src/tag.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tag.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.i
 .PHONY : src/tag.c.i
 
 src/tag.s: src/tag.c.s
@@ -2413,8 +2400,8 @@ src/tag.s: src/tag.c.s
 
 # target to generate assembly for a file
 src/tag.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tag.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tag.c.s
 .PHONY : src/tag.c.s
 
 src/tree.o: src/tree.c.o
@@ -2423,8 +2410,8 @@ src/tree.o: src/tree.c.o
 
 # target to build an object file
 src/tree.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tree.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.o
 .PHONY : src/tree.c.o
 
 src/tree.i: src/tree.c.i
@@ -2433,8 +2420,8 @@ src/tree.i: src/tree.c.i
 
 # target to preprocess a source file
 src/tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tree.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.i
 .PHONY : src/tree.c.i
 
 src/tree.s: src/tree.c.s
@@ -2443,8 +2430,8 @@ src/tree.s: src/tree.c.s
 
 # target to generate assembly for a file
 src/tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/tree.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/tree.c.s
 .PHONY : src/tree.c.s
 
 src/upsample_layer.o: src/upsample_layer.c.o
@@ -2453,8 +2440,8 @@ src/upsample_layer.o: src/upsample_layer.c.o
 
 # target to build an object file
 src/upsample_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/upsample_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.o
 .PHONY : src/upsample_layer.c.o
 
 src/upsample_layer.i: src/upsample_layer.c.i
@@ -2463,8 +2450,8 @@ src/upsample_layer.i: src/upsample_layer.c.i
 
 # target to preprocess a source file
 src/upsample_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/upsample_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.i
 .PHONY : src/upsample_layer.c.i
 
 src/upsample_layer.s: src/upsample_layer.c.s
@@ -2473,8 +2460,8 @@ src/upsample_layer.s: src/upsample_layer.c.s
 
 # target to generate assembly for a file
 src/upsample_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/upsample_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/upsample_layer.c.s
 .PHONY : src/upsample_layer.c.s
 
 src/utils.o: src/utils.c.o
@@ -2483,8 +2470,8 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -2493,8 +2480,8 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -2503,8 +2490,8 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 src/voxel.o: src/voxel.c.o
@@ -2513,8 +2500,8 @@ src/voxel.o: src/voxel.c.o
 
 # target to build an object file
 src/voxel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/voxel.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.o
 .PHONY : src/voxel.c.o
 
 src/voxel.i: src/voxel.c.i
@@ -2523,8 +2510,8 @@ src/voxel.i: src/voxel.c.i
 
 # target to preprocess a source file
 src/voxel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/voxel.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.i
 .PHONY : src/voxel.c.i
 
 src/voxel.s: src/voxel.c.s
@@ -2533,8 +2520,8 @@ src/voxel.s: src/voxel.c.s
 
 # target to generate assembly for a file
 src/voxel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/voxel.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/voxel.c.s
 .PHONY : src/voxel.c.s
 
 src/writing.o: src/writing.c.o
@@ -2543,8 +2530,8 @@ src/writing.o: src/writing.c.o
 
 # target to build an object file
 src/writing.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/writing.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.o
 .PHONY : src/writing.c.o
 
 src/writing.i: src/writing.c.i
@@ -2553,8 +2540,8 @@ src/writing.i: src/writing.c.i
 
 # target to preprocess a source file
 src/writing.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/writing.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.i
 .PHONY : src/writing.c.i
 
 src/writing.s: src/writing.c.s
@@ -2563,8 +2550,8 @@ src/writing.s: src/writing.c.s
 
 # target to generate assembly for a file
 src/writing.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/writing.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/writing.c.s
 .PHONY : src/writing.c.s
 
 src/yolo.o: src/yolo.c.o
@@ -2573,8 +2560,8 @@ src/yolo.o: src/yolo.c.o
 
 # target to build an object file
 src/yolo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.o
 .PHONY : src/yolo.c.o
 
 src/yolo.i: src/yolo.c.i
@@ -2583,8 +2570,8 @@ src/yolo.i: src/yolo.c.i
 
 # target to preprocess a source file
 src/yolo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.i
 .PHONY : src/yolo.c.i
 
 src/yolo.s: src/yolo.c.s
@@ -2593,8 +2580,8 @@ src/yolo.s: src/yolo.c.s
 
 # target to generate assembly for a file
 src/yolo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo.c.s
 .PHONY : src/yolo.c.s
 
 src/yolo_console_dll.o: src/yolo_console_dll.cpp.o
@@ -2603,7 +2590,6 @@ src/yolo_console_dll.o: src/yolo_console_dll.cpp.o
 
 # target to build an object file
 src/yolo_console_dll.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/src/yolo_console_dll.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o
 .PHONY : src/yolo_console_dll.cpp.o
 
@@ -2613,7 +2599,6 @@ src/yolo_console_dll.i: src/yolo_console_dll.cpp.i
 
 # target to preprocess a source file
 src/yolo_console_dll.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/src/yolo_console_dll.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.i
 .PHONY : src/yolo_console_dll.cpp.i
 
@@ -2623,7 +2608,6 @@ src/yolo_console_dll.s: src/yolo_console_dll.cpp.s
 
 # target to generate assembly for a file
 src/yolo_console_dll.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/src/yolo_console_dll.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.s
 .PHONY : src/yolo_console_dll.cpp.s
 
@@ -2633,8 +2617,8 @@ src/yolo_layer.o: src/yolo_layer.c.o
 
 # target to build an object file
 src/yolo_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.o
 .PHONY : src/yolo_layer.c.o
 
 src/yolo_layer.i: src/yolo_layer.c.i
@@ -2643,8 +2627,8 @@ src/yolo_layer.i: src/yolo_layer.c.i
 
 # target to preprocess a source file
 src/yolo_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.i
 .PHONY : src/yolo_layer.c.i
 
 src/yolo_layer.s: src/yolo_layer.c.s
@@ -2653,8 +2637,8 @@ src/yolo_layer.s: src/yolo_layer.c.s
 
 # target to generate assembly for a file
 src/yolo_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/src/yolo_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/src/yolo_layer.c.s
 .PHONY : src/yolo_layer.c.s
 
 src/yolo_v2_class.o: src/yolo_v2_class.cpp.o
@@ -2699,7 +2683,6 @@ help:
 	@echo "... dark"
 	@echo "... darknet"
 	@echo "... uselib"
-	@echo "... uselib_track"
 	@echo "... src/activation_kernels.o"
 	@echo "... src/activation_kernels.i"
 	@echo "... src/activation_kernels.s"

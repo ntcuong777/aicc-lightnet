@@ -1,4 +1,4 @@
-# Install script for directory: /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
+# Install script for directory: /home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

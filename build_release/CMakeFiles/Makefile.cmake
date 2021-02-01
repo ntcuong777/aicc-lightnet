@@ -116,8 +116,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.19/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.19/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.19/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/usr/local/share/cmake-3.19/Modules/FindCUDA.cmake"
-  "/usr/local/share/cmake-3.19/Modules/FindCUDA/select_compute_arch.cmake"
   "/usr/local/share/cmake-3.19/Modules/FindOpenMP.cmake"
   "/usr/local/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/share/cmake-3.19/Modules/FindPackageMessage.cmake"
@@ -158,8 +156,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/uselib_track.dir/DependInfo.cmake"
-  "CMakeFiles/dark.dir/DependInfo.cmake"
   "CMakeFiles/uselib.dir/DependInfo.cmake"
   "CMakeFiles/darknet.dir/DependInfo.cmake"
+  "CMakeFiles/dark.dir/DependInfo.cmake"
   )

@@ -1,0 +1,1 @@
+REMARK: This is built in the docker environment that contains the build of OpenCV 4.2 with opencv_contrib, and this opencv version is built with CUDA and CUDNN with Compute Capability (CC) 5.3,6.0,6.5,7.0,7.5?
