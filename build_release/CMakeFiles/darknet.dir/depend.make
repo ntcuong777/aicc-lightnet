@@ -5527,7 +5527,6 @@ CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/imgcodecs.hpp
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/imgproc.hpp
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
-CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/types_c.h
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/ml.hpp
 CMakeFiles/darknet.dir/src/http_stream.cpp.o: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
@@ -5700,7 +5699,6 @@ CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/imgproc.hpp
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
-CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/types_c.h
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/ml.hpp
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp

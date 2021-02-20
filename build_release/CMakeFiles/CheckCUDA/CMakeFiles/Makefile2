@@ -63,10 +63,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
+CMAKE_SOURCE_DIR = /home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
+CMAKE_BINARY_DIR = /home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA
 
 #=============================================================================
 # Directory level rules for the build root directory

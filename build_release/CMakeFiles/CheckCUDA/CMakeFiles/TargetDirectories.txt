@@ -1,2 +1,2 @@
-/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/CMakeFiles/rebuild_cache.dir
-/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/CMakeFiles/edit_cache.dir
+/home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/CMakeFiles/rebuild_cache.dir
+/home/cuong/aicc-lightnet/build_release/CMakeFiles/CheckCUDA/CMakeFiles/edit_cache.dir

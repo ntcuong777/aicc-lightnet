@@ -66,19 +66,18 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/AICC-darknet/aicc-lightnet
+CMAKE_SOURCE_DIR = /home/cuong/aicc-lightnet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/AICC-darknet/aicc-lightnet/build_release
+CMAKE_BINARY_DIR = /home/cuong/aicc-lightnet/build_release
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/uselib_track.dir/all
-all: CMakeFiles/dark.dir/all
 all: CMakeFiles/uselib.dir/all
 all: CMakeFiles/darknet.dir/all
+all: CMakeFiles/dark.dir/all
 
 .PHONY : all
 
@@ -88,66 +87,11 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/uselib_track.dir/clean
-clean: CMakeFiles/dark.dir/clean
 clean: CMakeFiles/uselib.dir/clean
 clean: CMakeFiles/darknet.dir/clean
+clean: CMakeFiles/dark.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/uselib_track.dir
-
-# All Build rule for target.
-CMakeFiles/uselib_track.dir/all: CMakeFiles/dark.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles --progress-num=99,100 "Built target uselib_track"
-.PHONY : CMakeFiles/uselib_track.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/uselib_track.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 51
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uselib_track.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 0
-.PHONY : CMakeFiles/uselib_track.dir/rule
-
-# Convenience name for target.
-uselib_track: CMakeFiles/uselib_track.dir/rule
-
-.PHONY : uselib_track
-
-# clean rule for target.
-CMakeFiles/uselib_track.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/clean
-.PHONY : CMakeFiles/uselib_track.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/dark.dir
-
-# All Build rule for target.
-CMakeFiles/dark.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target dark"
-.PHONY : CMakeFiles/dark.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/dark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 49
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dark.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 0
-.PHONY : CMakeFiles/dark.dir/rule
-
-# Convenience name for target.
-dark: CMakeFiles/dark.dir/rule
-
-.PHONY : dark
-
-# clean rule for target.
-CMakeFiles/dark.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/clean
-.PHONY : CMakeFiles/dark.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uselib.dir
@@ -156,14 +100,14 @@ CMakeFiles/dark.dir/clean:
 CMakeFiles/uselib.dir/all: CMakeFiles/dark.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles --progress-num=98 "Built target uselib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/aicc-lightnet/build_release/CMakeFiles --progress-num=99,100 "Built target uselib"
 .PHONY : CMakeFiles/uselib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uselib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uselib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 0
 .PHONY : CMakeFiles/uselib.dir/rule
 
 # Convenience name for target.
@@ -183,14 +127,14 @@ CMakeFiles/uselib.dir/clean:
 CMakeFiles/darknet.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97 "Built target darknet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/aicc-lightnet/build_release/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98 "Built target darknet"
 .PHONY : CMakeFiles/darknet.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/darknet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/darknet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 0
 .PHONY : CMakeFiles/darknet.dir/rule
 
 # Convenience name for target.
@@ -202,6 +146,33 @@ darknet: CMakeFiles/darknet.dir/rule
 CMakeFiles/darknet.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/clean
 .PHONY : CMakeFiles/darknet.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dark.dir
+
+# All Build rule for target.
+CMakeFiles/dark.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cuong/aicc-lightnet/build_release/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target dark"
+.PHONY : CMakeFiles/dark.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 49
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/aicc-lightnet/build_release/CMakeFiles 0
+.PHONY : CMakeFiles/dark.dir/rule
+
+# Convenience name for target.
+dark: CMakeFiles/dark.dir/rule
+
+.PHONY : dark
+
+# clean rule for target.
+CMakeFiles/dark.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/clean
+.PHONY : CMakeFiles/dark.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

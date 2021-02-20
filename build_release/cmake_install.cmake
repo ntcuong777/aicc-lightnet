@@ -1,8 +1,8 @@
-# Install script for directory: /home/cuong/AICC-darknet/aicc-lightnet
+# Install script for directory: /home/cuong/aicc-lightnet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cuong/AICC-darknet/aicc-lightnet")
+  set(CMAKE_INSTALL_PREFIX "/home/cuong/aicc-lightnet")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so")
+   "/home/cuong/aicc-lightnet/libdarknet.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cuong/AICC-darknet/aicc-lightnet" TYPE SHARED_LIBRARY FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/libdarknet.so")
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so")
+file(INSTALL DESTINATION "/home/cuong/aicc-lightnet" TYPE SHARED_LIBRARY FILES "/home/cuong/aicc-lightnet/build_release/libdarknet.so")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so"
-         OLD_RPATH "/usr/local/cuda/lib64:/usr/local/lib:"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so"
+         OLD_RPATH "/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/libdarknet.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/aicc-lightnet/libdarknet.so")
     endif()
   endif()
 endif()
@@ -75,91 +75,63 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/darknet" TYPE FILE FILES
-    "/home/cuong/AICC-darknet/aicc-lightnet/include/darknet.h"
-    "/home/cuong/AICC-darknet/aicc-lightnet/include/yolo_v2_class.hpp"
+    "/home/cuong/aicc-lightnet/include/darknet.h"
+    "/home/cuong/aicc-lightnet/include/yolo_v2_class.hpp"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cuong/AICC-darknet/aicc-lightnet/uselib")
+   "/home/cuong/aicc-lightnet/uselib")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cuong/AICC-darknet/aicc-lightnet" TYPE EXECUTABLE FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/uselib")
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib")
+file(INSTALL DESTINATION "/home/cuong/aicc-lightnet" TYPE EXECUTABLE FILES "/home/cuong/aicc-lightnet/build_release/uselib")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib"
-         OLD_RPATH "/usr/local/cuda/lib64:/home/cuong/AICC-darknet/aicc-lightnet/build_release:/usr/local/lib:"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib"
+         OLD_RPATH "/home/cuong/aicc-lightnet/build_release:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/aicc-lightnet/uselib")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cuong/AICC-darknet/aicc-lightnet/darknet")
+   "/home/cuong/aicc-lightnet/darknet")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cuong/AICC-darknet/aicc-lightnet" TYPE EXECUTABLE FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/darknet")
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet")
+file(INSTALL DESTINATION "/home/cuong/aicc-lightnet" TYPE EXECUTABLE FILES "/home/cuong/aicc-lightnet/build_release/darknet")
+  if(EXISTS "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet"
-         OLD_RPATH "/usr/local/cuda/lib64:/usr/local/lib:"
+         FILE "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet"
+         OLD_RPATH "/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/darknet")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track"
-         RPATH "")
-  endif()
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cuong/AICC-darknet/aicc-lightnet/uselib_track")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/cuong/AICC-darknet/aicc-lightnet" TYPE EXECUTABLE FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/uselib_track")
-  if(EXISTS "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track"
-         OLD_RPATH "/usr/local/cuda/lib64:/home/cuong/AICC-darknet/aicc-lightnet/build_release:/usr/local/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/AICC-darknet/aicc-lightnet/uselib_track")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/cuong/aicc-lightnet/darknet")
     endif()
   endif()
 endif()
@@ -168,7 +140,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/darknet/DarknetTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/darknet/DarknetTargets.cmake"
-         "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets.cmake")
+         "/home/cuong/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/darknet/DarknetTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -177,16 +149,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet" TYPE FILE FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet" TYPE FILE FILES "/home/cuong/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet" TYPE FILE FILES "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet" TYPE FILE FILES "/home/cuong/aicc-lightnet/build_release/CMakeFiles/Export/share/darknet/DarknetTargets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet" TYPE FILE FILES
-    "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/DarknetConfig.cmake"
-    "/home/cuong/AICC-darknet/aicc-lightnet/build_release/DarknetConfigVersion.cmake"
+    "/home/cuong/aicc-lightnet/build_release/CMakeFiles/DarknetConfig.cmake"
+    "/home/cuong/aicc-lightnet/build_release/DarknetConfigVersion.cmake"
     )
 endif()
 
@@ -198,5 +170,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cuong/AICC-darknet/aicc-lightnet/build_release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cuong/aicc-lightnet/build_release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

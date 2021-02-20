@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cuong/AICC-darknet/aicc-lightnet/src/yolo_console_dll.cpp" "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o"
+  "/home/cuong/aicc-lightnet/src/yolo_console_dll.cpp" "/home/cuong/aicc-lightnet/build_release/CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -13,7 +13,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "CUDNN"
   "GPU"
   "OPENCV"
-  "TRACK_OPTFLOW=1"
   "USE_CMAKE_LIBS"
   )
 
@@ -28,7 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cuong/AICC-darknet/aicc-lightnet/build_release/CMakeFiles/dark.dir/DependInfo.cmake"
+  "/home/cuong/aicc-lightnet/build_release/CMakeFiles/dark.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -3,22 +3,22 @@
 
 CMakeFiles/darknet.dir/src/activation_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activation_layer.c
+ /home/cuong/aicc-lightnet/src/activation_layer.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -75,11 +75,11 @@ CMakeFiles/darknet.dir/src/activation_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/activations.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.c
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -136,24 +136,24 @@ CMakeFiles/darknet.dir/src/activations.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/art.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/art.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/classifier.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/art.c
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/classifier.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gettimeofday.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -210,20 +210,20 @@ CMakeFiles/darknet.dir/src/art.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/avgpool_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer.c
+ /home/cuong/aicc-lightnet/src/avgpool_layer.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -280,21 +280,21 @@ CMakeFiles/darknet.dir/src/avgpool_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/batchnorm_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.c
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -351,12 +351,12 @@ CMakeFiles/darknet.dir/src/batchnorm_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/blas.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/blas.c
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -413,10 +413,10 @@ CMakeFiles/darknet.dir/src/blas.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/box.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/box.c
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -472,20 +472,20 @@ CMakeFiles/darknet.dir/src/box.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/captcha.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/captcha.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/captcha.c
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -542,22 +542,22 @@ CMakeFiles/darknet.dir/src/captcha.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/cifar.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cifar.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cifar.c
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -614,24 +614,24 @@ CMakeFiles/darknet.dir/src/cifar.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/classifier.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/classifier.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/classifier.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/classifier.c
+ /home/cuong/aicc-lightnet/src/classifier.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gettimeofday.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -688,23 +688,23 @@ CMakeFiles/darknet.dir/src/classifier.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/coco.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/coco.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/coco.c
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/demo.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -760,26 +760,26 @@ CMakeFiles/darknet.dir/src/coco.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_functions.hpp
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/col2im.c.o
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/col2im.c
+ /home/cuong/aicc-lightnet/src/col2im.h
 CMakeFiles/darknet.dir/src/compare.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/compare.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/compare.c
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -836,24 +836,24 @@ CMakeFiles/darknet.dir/src/compare.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/connected_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.c
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -910,24 +910,24 @@ CMakeFiles/darknet.dir/src/connected_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/conv_lstm_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/conv_lstm_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/conv_lstm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/conv_lstm_layer.c
+ /home/cuong/aicc-lightnet/src/conv_lstm_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -984,25 +984,25 @@ CMakeFiles/darknet.dir/src/conv_lstm_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/convolutional_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.c
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1059,21 +1059,21 @@ CMakeFiles/darknet.dir/src/convolutional_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/cost_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.c
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1129,26 +1129,26 @@ CMakeFiles/darknet.dir/src/cost_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_functions.hpp
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/cpu_gemm.c.o
- /home/cuong/AICC-darknet/aicc-lightnet/src/cpu_gemm.c
+ /home/cuong/aicc-lightnet/src/cpu_gemm.c
 CMakeFiles/darknet.dir/src/crnn_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/crnn_layer.c
+ /home/cuong/aicc-lightnet/src/crnn_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1205,20 +1205,20 @@ CMakeFiles/darknet.dir/src/crnn_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/crop_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/crop_layer.c
+ /home/cuong/aicc-lightnet/src/crop_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1275,12 +1275,12 @@ CMakeFiles/darknet.dir/src/crop_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/dark_cuda.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.c
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1337,23 +1337,23 @@ CMakeFiles/darknet.dir/src/dark_cuda.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/darknet.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/darknet.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/darknet.c
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1410,17 +1410,17 @@ CMakeFiles/darknet.dir/src/darknet.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/data.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.c
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1477,25 +1477,25 @@ CMakeFiles/darknet.dir/src/data.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/deconvolutional_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/deconvolutional_layer.c
+ /home/cuong/aicc-lightnet/src/deconvolutional_layer.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1552,26 +1552,26 @@ CMakeFiles/darknet.dir/src/deconvolutional_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/demo.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/demo.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/demo.c
+ /home/cuong/aicc-lightnet/src/demo.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/gettimeofday.h
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1628,22 +1628,22 @@ CMakeFiles/darknet.dir/src/demo.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/detection_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.c
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/softmax_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1700,25 +1700,25 @@ CMakeFiles/darknet.dir/src/detection_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/detector.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detector.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/demo.h
+ /home/cuong/aicc-lightnet/src/detector.c
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1775,20 +1775,20 @@ CMakeFiles/darknet.dir/src/detector.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/dice.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dice.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/dice.c
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1845,20 +1845,20 @@ CMakeFiles/darknet.dir/src/dice.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/dropout_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/dropout_layer.c
+ /home/cuong/aicc-lightnet/src/dropout_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1915,21 +1915,21 @@ CMakeFiles/darknet.dir/src/dropout_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gaussian_yolo_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/gaussian_yolo_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gaussian_yolo_layer.c
+ /home/cuong/aicc-lightnet/src/gaussian_yolo_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -1986,13 +1986,13 @@ CMakeFiles/darknet.dir/src/gaussian_yolo_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/gemm.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/gemm.c
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2049,22 +2049,22 @@ CMakeFiles/darknet.dir/src/gemm.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/go.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/go.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/go.c
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2121,23 +2121,23 @@ CMakeFiles/darknet.dir/src/go.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/gru_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/gru_layer.c
+ /home/cuong/aicc-lightnet/src/gru_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2194,8 +2194,8 @@ CMakeFiles/darknet.dir/src/gru_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/im2col.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/im2col.c
+ /home/cuong/aicc-lightnet/src/im2col.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2253,16 +2253,16 @@ CMakeFiles/darknet.dir/src/image.c.o
  ../3rdparty/stb/include/stb_image.h
  ../3rdparty/stb/include/stb_image_write.h
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/image.c
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2319,13 +2319,13 @@ CMakeFiles/darknet.dir/src/image.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/layer.c
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2382,10 +2382,10 @@ CMakeFiles/darknet.dir/src/layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/list.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/list.c
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2441,24 +2441,24 @@ CMakeFiles/darknet.dir/src/list.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/local_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/local_layer.c
+ /home/cuong/aicc-lightnet/src/local_layer.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2515,23 +2515,23 @@ CMakeFiles/darknet.dir/src/local_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/lstm_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/lstm_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/lstm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/lstm_layer.c
+ /home/cuong/aicc-lightnet/src/lstm_layer.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2588,10 +2588,10 @@ CMakeFiles/darknet.dir/src/lstm_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/matrix.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.c
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2647,22 +2647,22 @@ CMakeFiles/darknet.dir/src/matrix.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/maxpool_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer.c
+ /home/cuong/aicc-lightnet/src/maxpool_layer.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2719,48 +2719,48 @@ CMakeFiles/darknet.dir/src/maxpool_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/network.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/conv_lstm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gaussian_yolo_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_old_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/sam_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/scale_channels_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/upsample_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo_layer.h
+ /home/cuong/aicc-lightnet/src/activation_layer.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/conv_lstm_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/crnn_layer.h
+ /home/cuong/aicc-lightnet/src/crop_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/dropout_layer.h
+ /home/cuong/aicc-lightnet/src/gaussian_yolo_layer.h
+ /home/cuong/aicc-lightnet/src/gru_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/local_layer.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer.h
+ /home/cuong/aicc-lightnet/src/network.c
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/normalization_layer.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/reorg_layer.h
+ /home/cuong/aicc-lightnet/src/reorg_old_layer.h
+ /home/cuong/aicc-lightnet/src/rnn_layer.h
+ /home/cuong/aicc-lightnet/src/route_layer.h
+ /home/cuong/aicc-lightnet/src/sam_layer.h
+ /home/cuong/aicc-lightnet/src/scale_channels_layer.h
+ /home/cuong/aicc-lightnet/src/shortcut_layer.h
+ /home/cuong/aicc-lightnet/src/softmax_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/upsample_layer.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/yolo_layer.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2817,21 +2817,21 @@ CMakeFiles/darknet.dir/src/network.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/nightmare.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/nightmare.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/nightmare.c
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2888,21 +2888,21 @@ CMakeFiles/darknet.dir/src/nightmare.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/normalization_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/normalization_layer.c
+ /home/cuong/aicc-lightnet/src/normalization_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -2959,16 +2959,16 @@ CMakeFiles/darknet.dir/src/normalization_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/option_list.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/option_list.c
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3024,51 +3024,51 @@ CMakeFiles/darknet.dir/src/option_list.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/parser.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/conv_lstm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gaussian_yolo_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/lstm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_old_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/sam_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/scale_channels_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/upsample_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/version.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo_layer.h
+ /home/cuong/aicc-lightnet/src/activation_layer.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/conv_lstm_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/crnn_layer.h
+ /home/cuong/aicc-lightnet/src/crop_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/dropout_layer.h
+ /home/cuong/aicc-lightnet/src/gaussian_yolo_layer.h
+ /home/cuong/aicc-lightnet/src/gru_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/local_layer.h
+ /home/cuong/aicc-lightnet/src/lstm_layer.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/normalization_layer.h
+ /home/cuong/aicc-lightnet/src/option_list.h
+ /home/cuong/aicc-lightnet/src/parser.c
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/reorg_layer.h
+ /home/cuong/aicc-lightnet/src/reorg_old_layer.h
+ /home/cuong/aicc-lightnet/src/rnn_layer.h
+ /home/cuong/aicc-lightnet/src/route_layer.h
+ /home/cuong/aicc-lightnet/src/sam_layer.h
+ /home/cuong/aicc-lightnet/src/scale_channels_layer.h
+ /home/cuong/aicc-lightnet/src/shortcut_layer.h
+ /home/cuong/aicc-lightnet/src/softmax_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/upsample_layer.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/version.h
+ /home/cuong/aicc-lightnet/src/yolo_layer.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3125,21 +3125,21 @@ CMakeFiles/darknet.dir/src/parser.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/region_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/region_layer.c
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3196,21 +3196,21 @@ CMakeFiles/darknet.dir/src/region_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/reorg_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/reorg_layer.c
+ /home/cuong/aicc-lightnet/src/reorg_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3267,21 +3267,21 @@ CMakeFiles/darknet.dir/src/reorg_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/reorg_old_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_old_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_old_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/reorg_old_layer.c
+ /home/cuong/aicc-lightnet/src/reorg_old_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3338,22 +3338,22 @@ CMakeFiles/darknet.dir/src/reorg_old_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/rnn.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/rnn.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3410,23 +3410,23 @@ CMakeFiles/darknet.dir/src/rnn.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/rnn_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/rnn_layer.c
+ /home/cuong/aicc-lightnet/src/rnn_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3483,22 +3483,22 @@ CMakeFiles/darknet.dir/src/rnn_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/rnn_vid.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_vid.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/rnn_vid.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3555,21 +3555,21 @@ CMakeFiles/darknet.dir/src/rnn_vid.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/route_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/route_layer.c
+ /home/cuong/aicc-lightnet/src/route_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3626,21 +3626,21 @@ CMakeFiles/darknet.dir/src/route_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/sam_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/sam_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/sam_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/sam_layer.c
+ /home/cuong/aicc-lightnet/src/sam_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3697,21 +3697,21 @@ CMakeFiles/darknet.dir/src/sam_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/scale_channels_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/scale_channels_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/scale_channels_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/scale_channels_layer.c
+ /home/cuong/aicc-lightnet/src/scale_channels_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3768,23 +3768,23 @@ CMakeFiles/darknet.dir/src/scale_channels_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/shortcut_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/shortcut_layer.c
+ /home/cuong/aicc-lightnet/src/shortcut_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3841,21 +3841,21 @@ CMakeFiles/darknet.dir/src/shortcut_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/softmax_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/softmax_layer.c
+ /home/cuong/aicc-lightnet/src/softmax_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3912,21 +3912,21 @@ CMakeFiles/darknet.dir/src/softmax_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/super.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/super.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/super.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -3983,22 +3983,22 @@ CMakeFiles/darknet.dir/src/super.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/swag.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/swag.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/swag.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4055,20 +4055,20 @@ CMakeFiles/darknet.dir/src/swag.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/tag.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tag.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tag.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4125,15 +4125,15 @@ CMakeFiles/darknet.dir/src/tag.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/tree.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/tree.c
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4189,21 +4189,21 @@ CMakeFiles/darknet.dir/src/tree.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/upsample_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/upsample_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/upsample_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/upsample_layer.c
+ /home/cuong/aicc-lightnet/src/upsample_layer.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4260,12 +4260,12 @@ CMakeFiles/darknet.dir/src/upsample_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/utils.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/darkunistd.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/getopt.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/darkunistd.h
+ /home/cuong/aicc-lightnet/src/getopt.h
+ /home/cuong/aicc-lightnet/src/gettimeofday.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/utils.c
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4321,21 +4321,21 @@ CMakeFiles/darknet.dir/src/utils.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/voxel.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/voxel.c
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/voxel.c
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4392,20 +4392,20 @@ CMakeFiles/darknet.dir/src/voxel.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/writing.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/writing.c
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/writing.c
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4462,23 +4462,23 @@ CMakeFiles/darknet.dir/src/writing.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/yolo.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo.c
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/demo.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/yolo.c
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4535,21 +4535,21 @@ CMakeFiles/darknet.dir/src/yolo.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/yolo_layer.c.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo_layer.c
- /home/cuong/AICC-darknet/aicc-lightnet/src/yolo_layer.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/yolo_layer.c
+ /home/cuong/aicc-lightnet/src/yolo_layer.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4606,11 +4606,11 @@ CMakeFiles/darknet.dir/src/yolo_layer.c.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/activation_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activation_kernels.cu
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4667,20 +4667,20 @@ CMakeFiles/darknet.dir/src/activation_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer_kernels.cu
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4737,12 +4737,12 @@ CMakeFiles/darknet.dir/src/avgpool_layer_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/blas_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/blas_kernels.cu
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4799,9 +4799,9 @@ CMakeFiles/darknet.dir/src/blas_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/col2im_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/col2im_kernels.cu
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4858,25 +4858,25 @@ CMakeFiles/darknet.dir/src/col2im_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/convolutional_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/convolutional_kernels.cu
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -4933,20 +4933,20 @@ CMakeFiles/darknet.dir/src/convolutional_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/crop_layer.h
+ /home/cuong/aicc-lightnet/src/crop_layer_kernels.cu
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5003,25 +5003,25 @@ CMakeFiles/darknet.dir/src/crop_layer_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/col2im.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/deconvolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gemm.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/col2im.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/deconvolutional_kernels.cu
+ /home/cuong/aicc-lightnet/src/deconvolutional_layer.h
+ /home/cuong/aicc-lightnet/src/gemm.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5078,21 +5078,21 @@ CMakeFiles/darknet.dir/src/deconvolutional_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/dropout_layer.h
+ /home/cuong/aicc-lightnet/src/dropout_layer_kernels.cu
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5149,9 +5149,9 @@ CMakeFiles/darknet.dir/src/dropout_layer_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/im2col_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/im2col_kernels.cu
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/im2col.h
+ /home/cuong/aicc-lightnet/src/im2col_kernels.cu
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5213,22 +5213,22 @@ CMakeFiles/darknet.dir/src/im2col_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer_kernels.cu
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5285,42 +5285,42 @@ CMakeFiles/darknet.dir/src/maxpool_layer_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/network_kernels.cu.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activation_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/avgpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/batchnorm_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/connected_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/convolutional_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/crop_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/data.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dropout_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gru_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/local_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/maxpool_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/network_kernels.cu
- /home/cuong/AICC-darknet/aicc-lightnet/src/normalization_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/reorg_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/rnn_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/route_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/shortcut_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/softmax_layer.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/activation_layer.h
+ /home/cuong/aicc-lightnet/src/activations.h
+ /home/cuong/aicc-lightnet/src/avgpool_layer.h
+ /home/cuong/aicc-lightnet/src/batchnorm_layer.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/connected_layer.h
+ /home/cuong/aicc-lightnet/src/convolutional_layer.h
+ /home/cuong/aicc-lightnet/src/cost_layer.h
+ /home/cuong/aicc-lightnet/src/crnn_layer.h
+ /home/cuong/aicc-lightnet/src/crop_layer.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/data.h
+ /home/cuong/aicc-lightnet/src/detection_layer.h
+ /home/cuong/aicc-lightnet/src/dropout_layer.h
+ /home/cuong/aicc-lightnet/src/gru_layer.h
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/layer.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/local_layer.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/maxpool_layer.h
+ /home/cuong/aicc-lightnet/src/network.h
+ /home/cuong/aicc-lightnet/src/network_kernels.cu
+ /home/cuong/aicc-lightnet/src/normalization_layer.h
+ /home/cuong/aicc-lightnet/src/parser.h
+ /home/cuong/aicc-lightnet/src/region_layer.h
+ /home/cuong/aicc-lightnet/src/reorg_layer.h
+ /home/cuong/aicc-lightnet/src/rnn_layer.h
+ /home/cuong/aicc-lightnet/src/route_layer.h
+ /home/cuong/aicc-lightnet/src/shortcut_layer.h
+ /home/cuong/aicc-lightnet/src/softmax_layer.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5377,21 +5377,21 @@ CMakeFiles/darknet.dir/src/network_kernels.cu.o
  /usr/local/cuda/targets/x86_64-linux/include/vector_types.h
 CMakeFiles/darknet.dir/src/http_stream.cpp.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/darkunistd.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/getopt.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.cpp
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/httplib.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/blas.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/dark_cuda.h
+ /home/cuong/aicc-lightnet/src/darkunistd.h
+ /home/cuong/aicc-lightnet/src/getopt.h
+ /home/cuong/aicc-lightnet/src/gettimeofday.h
+ /home/cuong/aicc-lightnet/src/http_stream.cpp
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/httplib.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/tree.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5528,7 +5528,6 @@ CMakeFiles/darknet.dir/src/http_stream.cpp.o
  /usr/local/include/opencv4/opencv2/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/imgproc.hpp
  /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
- /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/imgproc/types_c.h
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
@@ -5556,14 +5555,14 @@ CMakeFiles/darknet.dir/src/http_stream.cpp.o
  /usr/local/include/opencv4/opencv2/videoio/videoio.hpp
 CMakeFiles/darknet.dir/src/image_opencv.cpp.o
  ../include/darknet.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/box.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.cpp
- /home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/list.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
- /home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+ /home/cuong/aicc-lightnet/src/box.h
+ /home/cuong/aicc-lightnet/src/http_stream.h
+ /home/cuong/aicc-lightnet/src/image.h
+ /home/cuong/aicc-lightnet/src/image_opencv.cpp
+ /home/cuong/aicc-lightnet/src/image_opencv.h
+ /home/cuong/aicc-lightnet/src/list.h
+ /home/cuong/aicc-lightnet/src/matrix.h
+ /home/cuong/aicc-lightnet/src/utils.h
  /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h
  /usr/local/cuda/targets/x86_64-linux/include/channel_descriptor.h
  /usr/local/cuda/targets/x86_64-linux/include/crt/common_functions.h
@@ -5701,7 +5700,6 @@ CMakeFiles/darknet.dir/src/image_opencv.cpp.o
  /usr/local/include/opencv4/opencv2/imgproc.hpp
  /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
- /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/imgproc/types_c.h
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp

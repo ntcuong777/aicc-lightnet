@@ -4414,13 +4414,13 @@ long tm_gmtoff;
 const char *tm_zone; 
 # 26
 }; 
-# 8 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3
+# 9 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3
 struct timespec { 
-# 10
-__time_t tv_sec; 
 # 11
-__syscall_slong_t tv_nsec; 
+__time_t tv_sec; 
 # 12
+__syscall_slong_t tv_nsec; 
+# 13
 }; 
 # 7 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 3
 typedef __clockid_t clockid_t; 
@@ -6861,7 +6861,7 @@ return __iseqsig(__x, __y);
 # 1224
 template<> struct __iseqsig_type< long double>  { 
 # 1226
-static int __call(double __x, double __y) throw() 
+static int __call(long double __x, long double __y) throw() 
 # 1227
 { 
 # 1229
@@ -7294,55 +7294,55 @@ unsigned __count;
 int __owner; 
 # 124
 unsigned __nusers; 
-# 128
+# 148 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3
 int __kind; 
-# 134
-short __spins; short __elision; 
-# 135
-__pthread_list_t __list; 
-# 146 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3
-}; 
-# 151
-struct __pthread_cond_s { 
 # 154
-__extension__ union { 
+short __spins; short __elision; 
 # 155
-__extension__ unsigned long long __wseq; 
-# 157
-struct { 
-# 158
-unsigned __low; 
-# 159
-unsigned __high; 
-# 160
-} __wseq32; 
-# 161
-}; 
-# 163
-__extension__ union { 
-# 164
-__extension__ unsigned long long __g1_start; 
-# 166
-struct { 
-# 167
-unsigned __low; 
-# 168
-unsigned __high; 
-# 169
-} __g1_start32; 
-# 170
+__pthread_list_t __list; 
+# 166 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3
 }; 
 # 171
-unsigned __g_refs[2]; 
-# 172
-unsigned __g_size[2]; 
-# 173
-unsigned __g1_orig_size; 
+struct __pthread_cond_s { 
 # 174
-unsigned __wrefs; 
+__extension__ union { 
 # 175
+__extension__ unsigned long long __wseq; 
+# 177
+struct { 
+# 178
+unsigned __low; 
+# 179
+unsigned __high; 
+# 180
+} __wseq32; 
+# 181
+}; 
+# 183
+__extension__ union { 
+# 184
+__extension__ unsigned long long __g1_start; 
+# 186
+struct { 
+# 187
+unsigned __low; 
+# 188
+unsigned __high; 
+# 189
+} __g1_start32; 
+# 190
+}; 
+# 191
+unsigned __g_refs[2]; 
+# 192
+unsigned __g_size[2]; 
+# 193
+unsigned __g1_orig_size; 
+# 194
+unsigned __wrefs; 
+# 195
 unsigned __g_signals[2]; 
-# 176
+# 196
 }; 
 # 27 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3
 typedef unsigned long pthread_t; 

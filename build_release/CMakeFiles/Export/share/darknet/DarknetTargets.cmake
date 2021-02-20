@@ -53,9 +53,9 @@ endif()
 add_library(Darknet::dark SHARED IMPORTED)
 
 set_target_properties(Darknet::dark PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "TRACK_OPTFLOW=1;CUDNN;OPENCV;GPU"
+  INTERFACE_COMPILE_DEFINITIONS "CUDNN;OPENCV;GPU"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/darknet;/usr/local/cuda/targets/x86_64-linux/include"
-  INTERFACE_LINK_LIBRARIES "opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_sfm;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto;opencv_cudaoptflow;opencv_cudaimgproc;OpenMP::OpenMP_CXX;OpenMP::OpenMP_C;m;Threads::Threads"
+  INTERFACE_LINK_LIBRARIES "opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;OpenMP::OpenMP_CXX;OpenMP::OpenMP_C;m;Threads::Threads"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

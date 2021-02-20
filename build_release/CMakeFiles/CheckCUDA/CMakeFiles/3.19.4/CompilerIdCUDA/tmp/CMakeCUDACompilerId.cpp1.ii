@@ -3991,13 +3991,7 @@ struct tm
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-
-
-
-
-
-
-
+# 9 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
 struct timespec
 {
   __time_t tv_sec;
@@ -9155,9 +9149,7 @@ struct __pthread_mutex_s
   int __owner;
 
   unsigned int __nusers;
-
-
-
+# 148 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
   int __kind;
  
 
@@ -9166,7 +9158,7 @@ struct __pthread_mutex_s
 
   short __spins; short __elision;
   __pthread_list_t __list;
-# 145 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 165 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
  
 };
 
@@ -14043,7 +14035,7 @@ template<> struct __iseqsig_type<double>
 
 template<> struct __iseqsig_type<long double>
 {
-  static int __call (double __x, double __y) throw ()
+  static int __call (long double __x, long double __y) throw ()
   {
 
     return __iseqsigl (__x, __y);

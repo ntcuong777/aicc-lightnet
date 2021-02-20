@@ -94,39 +94,39 @@ opencv2/core/cuda.hpp
 opencv2/video/tracking.hpp
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
+/home/cuong/aicc-lightnet/src/activations.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 dark_cuda.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
+/home/cuong/aicc-lightnet/src/dark_cuda.h
 math.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/math.h
+/home/cuong/aicc-lightnet/src/math.h
 utils.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+/home/cuong/aicc-lightnet/src/utils.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
+/home/cuong/aicc-lightnet/src/blas.h
 stdlib.h
 -
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 dark_cuda.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
+/home/cuong/aicc-lightnet/src/dark_cuda.h
 tree.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
+/home/cuong/aicc-lightnet/src/tree.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/box.h
+/home/cuong/aicc-lightnet/src/box.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
+/home/cuong/aicc-lightnet/src/cost_layer.h
 layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
+/home/cuong/aicc-lightnet/src/layer.h
 network.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/dark_cuda.h
+/home/cuong/aicc-lightnet/src/dark_cuda.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 cuda.h
 -
 cuda_runtime.h
@@ -140,13 +140,13 @@ cuda_runtime_api.h
 cudnn.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/darkunistd.h
+/home/cuong/aicc-lightnet/src/darkunistd.h
 winsock2.h
 -
 direct.h
 -
 getopt.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/getopt.h
+/home/cuong/aicc-lightnet/src/getopt.h
 io.h
 -
 process.h
@@ -156,33 +156,33 @@ stdlib.h
 unistd.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/data.h
+/home/cuong/aicc-lightnet/src/data.h
 pthread.h
 -
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 matrix.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
+/home/cuong/aicc-lightnet/src/matrix.h
 list.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/list.h
+/home/cuong/aicc-lightnet/src/list.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 tree.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
+/home/cuong/aicc-lightnet/src/tree.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
+/home/cuong/aicc-lightnet/src/demo.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
+/home/cuong/aicc-lightnet/src/detection_layer.h
 layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
+/home/cuong/aicc-lightnet/src/layer.h
 network.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/getopt.h
+/home/cuong/aicc-lightnet/src/getopt.h
 crtdefs.h
 -
 errno.h
@@ -198,7 +198,7 @@ string.h
 windows.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
+/home/cuong/aicc-lightnet/src/gettimeofday.h
 windows.h
 -
 winsock2.h
@@ -208,13 +208,13 @@ stdint.h
 time.h
 -
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.cpp
+/home/cuong/aicc-lightnet/src/http_stream.cpp
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 http_stream.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
+/home/cuong/aicc-lightnet/src/http_stream.h
 cstdio
 -
 vector
@@ -240,9 +240,9 @@ winsock2.h
 ws2tcpip.h
 -
 gettimeofday.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/gettimeofday.h
+/home/cuong/aicc-lightnet/src/gettimeofday.h
 darkunistd.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darkunistd.h
+/home/cuong/aicc-lightnet/src/darkunistd.h
 fcntl.h
 -
 sys/time.h
@@ -270,7 +270,7 @@ opencv2/imgproc/imgproc_c.h
 opencv2/videoio/videoio.hpp
 -
 httplib.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/httplib.h
+/home/cuong/aicc-lightnet/src/httplib.h
 chrono
 -
 iostream
@@ -284,19 +284,19 @@ vector
 iostream
 -
 blas.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/blas.h
+/home/cuong/aicc-lightnet/src/blas.h
 utils.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+/home/cuong/aicc-lightnet/src/utils.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
+/home/cuong/aicc-lightnet/src/http_stream.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 stdint.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/httplib.h
+/home/cuong/aicc-lightnet/src/httplib.h
 io.h
 -
 winsock2.h
@@ -368,9 +368,9 @@ openssl/crypto.h
 zlib.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 stdlib.h
 -
 stdio.h
@@ -382,17 +382,17 @@ string.h
 math.h
 -
 image_opencv.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
+/home/cuong/aicc-lightnet/src/image_opencv.h
 box.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/box.h
+/home/cuong/aicc-lightnet/src/box.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.cpp
+/home/cuong/aicc-lightnet/src/image_opencv.cpp
 image_opencv.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
+/home/cuong/aicc-lightnet/src/image_opencv.h
 iostream
 -
 utils.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+/home/cuong/aicc-lightnet/src/utils.h
 cstdio
 -
 cstdlib
@@ -436,99 +436,99 @@ opencv2/core/types_c.h
 opencv2/core/version.hpp
 -
 http_stream.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/http_stream.h
+/home/cuong/aicc-lightnet/src/http_stream.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/image_opencv.h
+/home/cuong/aicc-lightnet/src/image_opencv.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 matrix.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
+/home/cuong/aicc-lightnet/src/matrix.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
+/home/cuong/aicc-lightnet/src/layer.h
 activations.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/activations.h
+/home/cuong/aicc-lightnet/src/activations.h
 stddef.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/stddef.h
+/home/cuong/aicc-lightnet/src/stddef.h
 tree.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
+/home/cuong/aicc-lightnet/src/tree.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/list.h
+/home/cuong/aicc-lightnet/src/list.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/matrix.h
+/home/cuong/aicc-lightnet/src/matrix.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 stdint.h
 -
 layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
+/home/cuong/aicc-lightnet/src/layer.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 data.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/data.h
+/home/cuong/aicc-lightnet/src/data.h
 tree.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
+/home/cuong/aicc-lightnet/src/tree.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
+/home/cuong/aicc-lightnet/src/option_list.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 list.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/list.h
+/home/cuong/aicc-lightnet/src/list.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
+/home/cuong/aicc-lightnet/src/parser.h
 network.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
+/home/cuong/aicc-lightnet/src/region_layer.h
 layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/layer.h
+/home/cuong/aicc-lightnet/src/layer.h
 network.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/tree.h
+/home/cuong/aicc-lightnet/src/tree.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+/home/cuong/aicc-lightnet/src/utils.h
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 list.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/list.h
+/home/cuong/aicc-lightnet/src/list.h
 stdio.h
 -
 time.h
 -
 
-/home/cuong/AICC-darknet/aicc-lightnet/src/yolo_v2_class.cpp
+/home/cuong/aicc-lightnet/src/yolo_v2_class.cpp
 darknet.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/darknet.h
+/home/cuong/aicc-lightnet/src/darknet.h
 yolo_v2_class.hpp
-/home/cuong/AICC-darknet/aicc-lightnet/src/yolo_v2_class.hpp
+/home/cuong/aicc-lightnet/src/yolo_v2_class.hpp
 network.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/network.h
+/home/cuong/aicc-lightnet/src/network.h
 detection_layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/detection_layer.h
+/home/cuong/aicc-lightnet/src/detection_layer.h
 region_layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/region_layer.h
+/home/cuong/aicc-lightnet/src/region_layer.h
 cost_layer.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/cost_layer.h
+/home/cuong/aicc-lightnet/src/cost_layer.h
 utils.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/utils.h
+/home/cuong/aicc-lightnet/src/utils.h
 parser.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/parser.h
+/home/cuong/aicc-lightnet/src/parser.h
 box.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/box.h
+/home/cuong/aicc-lightnet/src/box.h
 image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/image.h
+/home/cuong/aicc-lightnet/src/image.h
 demo.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/demo.h
+/home/cuong/aicc-lightnet/src/demo.h
 option_list.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/option_list.h
+/home/cuong/aicc-lightnet/src/option_list.h
 stb_image.h
-/home/cuong/AICC-darknet/aicc-lightnet/src/stb_image.h
+/home/cuong/aicc-lightnet/src/stb_image.h
 vector
 -
 iostream
@@ -1093,8 +1093,6 @@ hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
 wasm_simd128.h
 -
-riscv_vector.h
--
 emmintrin.h
 -
 Intrin.h
@@ -1105,16 +1103,12 @@ arm_neon.h
 -
 altivec.h
 -
-immintrin.h
--
 
 /usr/local/include/opencv4/opencv2/core/cv_cpu_helper.h
 
 /usr/local/include/opencv4/opencv2/core/cvdef.h
 cvconfig.h
 /usr/local/include/opencv4/opencv2/core/cvconfig.h
-limits
--
 limits.h
 -
 opencv2/core/hal/interface.h
@@ -1160,8 +1154,6 @@ cvstd_wrapper.hpp
 complex
 -
 ostream
--
-sstream
 -
 
 /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
@@ -1253,8 +1245,8 @@ opencv2/core/types.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/types.hpp
 opencv2/core/mat.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/mat.hpp
-opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+opencv2/opencv.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/opencv.hpp
 time.h
 -
 
@@ -1331,20 +1323,6 @@ opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
 assert.h
 -
-
-/usr/local/include/opencv4/opencv2/cudaarithm.hpp
-opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/cuda.hpp
-
-/usr/local/include/opencv4/opencv2/cudaimgproc.hpp
-opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/cuda.hpp
-opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/opencv2/imgproc.hpp
-
-/usr/local/include/opencv4/opencv2/cudaoptflow.hpp
-opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/cuda.hpp
 
 /usr/local/include/opencv4/opencv2/dnn.hpp
 opencv2/dnn/dnn.hpp
@@ -1449,6 +1427,8 @@ typeinfo
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
 sstream
 -
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 ground_truth.h
@@ -1471,6 +1451,8 @@ logger.h
 /usr/local/include/opencv4/opencv2/flann/logger.h
 
 /usr/local/include/opencv4/opencv2/flann/composite_index.h
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 kdtree_index.h
@@ -1511,6 +1493,8 @@ dist.h
 /usr/local/include/opencv4/opencv2/flann/flann_base.hpp
 vector
 -
+cassert
+-
 cstdio
 -
 general.h
@@ -1545,6 +1529,8 @@ algorithm
 -
 map
 -
+cassert
+-
 limits
 -
 cmath
@@ -1571,6 +1557,8 @@ saving.h
 /usr/local/include/opencv4/opencv2/flann/index_testing.h
 cstring
 -
+cassert
+-
 cmath
 -
 matrix.h
@@ -1589,8 +1577,12 @@ algorithm
 -
 map
 -
+cassert
+-
 cstring
 -
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 dynamic_bitset.h
@@ -1613,8 +1605,12 @@ algorithm
 -
 map
 -
+cassert
+-
 cstring
 -
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 matrix.h
@@ -1634,6 +1630,8 @@ saving.h
 algorithm
 -
 map
+-
+cassert
 -
 limits
 -
@@ -1661,6 +1659,8 @@ logger.h
 /usr/local/include/opencv4/opencv2/flann/logger.h
 
 /usr/local/include/opencv4/opencv2/flann/linear_index.h
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 
@@ -1675,12 +1675,16 @@ defines.h
 /usr/local/include/opencv4/opencv2/flann/lsh_index.h
 algorithm
 -
+cassert
+-
 cstring
 -
 map
 -
 vector
 -
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 matrix.h
@@ -1727,6 +1731,8 @@ opencv2/flann/defines.h
 /usr/local/include/opencv4/opencv2/flann/opencv2/flann/defines.h
 
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 matrix.h
 /usr/local/include/opencv4/opencv2/flann/matrix.h
 result_set.h
@@ -1751,6 +1757,8 @@ cstdlib
 -
 vector
 -
+general.h
+/usr/local/include/opencv4/opencv2/flann/general.h
 
 /usr/local/include/opencv4/opencv2/flann/result_set.h
 algorithm
@@ -1819,8 +1827,6 @@ opencv2/imgcodecs.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
-./imgproc/segmentation.hpp
-/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
 
 /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
 opencv2/imgproc.hpp
@@ -1829,10 +1835,6 @@ opencv2/imgproc.hpp
 /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
 opencv2/imgproc/types_c.h
 /usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc/types_c.h
-
-/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
-opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/local/include/opencv4/opencv2/imgproc/types_c.h
 opencv2/core/core_c.h
@@ -1889,12 +1891,40 @@ opencv2/objdetect.hpp
 /usr/local/include/opencv4/opencv2/opencv2/objdetect.hpp
 opencv2/photo.hpp
 /usr/local/include/opencv4/opencv2/opencv2/photo.hpp
+opencv2/shape.hpp
+/usr/local/include/opencv4/opencv2/opencv2/shape.hpp
 opencv2/stitching.hpp
 /usr/local/include/opencv4/opencv2/opencv2/stitching.hpp
+opencv2/superres.hpp
+/usr/local/include/opencv4/opencv2/opencv2/superres.hpp
 opencv2/video.hpp
 /usr/local/include/opencv4/opencv2/opencv2/video.hpp
 opencv2/videoio.hpp
 /usr/local/include/opencv4/opencv2/opencv2/videoio.hpp
+opencv2/videostab.hpp
+/usr/local/include/opencv4/opencv2/opencv2/videostab.hpp
+opencv2/viz.hpp
+/usr/local/include/opencv4/opencv2/opencv2/viz.hpp
+opencv2/cudaarithm.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudaarithm.hpp
+opencv2/cudabgsegm.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudabgsegm.hpp
+opencv2/cudacodec.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudacodec.hpp
+opencv2/cudafeatures2d.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudafeatures2d.hpp
+opencv2/cudafilters.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudafilters.hpp
+opencv2/cudaimgproc.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudaimgproc.hpp
+opencv2/cudaobjdetect.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudaobjdetect.hpp
+opencv2/cudaoptflow.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudaoptflow.hpp
+opencv2/cudastereo.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudastereo.hpp
+opencv2/cudawarping.hpp
+/usr/local/include/opencv4/opencv2/opencv2/cudawarping.hpp
 
 /usr/local/include/opencv4/opencv2/opencv_modules.hpp
 

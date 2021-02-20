@@ -40,9 +40,6 @@ CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/ope
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/core/utils/tls.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/core/version.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
-CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/cudaarithm.hpp
-CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/cudaimgproc.hpp
-CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/cudaoptflow.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/dnn.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/dnn/dict.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/dnn/dnn.hpp
@@ -88,7 +85,6 @@ CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/ope
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/imgcodecs.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/imgproc.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
-CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/imgproc/types_c.h
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/ml.hpp
 CMakeFiles/uselib.dir/src/yolo_console_dll.cpp.o: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
