@@ -382,8 +382,14 @@ void train_detector(char *datacfg, char *cfgfile, char *weightfile, int *gpus, i
 
         //if (i % 1000 == 0 || (i < 1000 && i % 100 == 0)) {
         //if (i % 100 == 0) {
-        if ((iteration >= (iter_save + 10000) || iteration % 10000 == 0) ||
-            (iteration >= (iter_save + 1000) || iteration % 1000 == 0) && net.max_batches < 10000)
+
+        // The commentted following 2 lines belong to the author 
+        // if ((iteration >= (iter_save + 10000) || iteration % 10000 == 0) ||
+        //     (iteration >= (iter_save + 1000) || iteration % 1000 == 0) && net.max_batches < 10000)
+
+        // Our team changes this condition to make the network saves
+        // every 1000 steps
+        if (iteration >= (iter_save + 1000) || iteration % 1000 == 0)
         {
             iter_save = iteration;
 #ifdef GPU
