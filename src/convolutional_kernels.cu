@@ -848,18 +848,11 @@ void backward_convolutional_layer_gpu(convolutional_layer l, network_state state
             if (l.binary || l.xnor) swap_binary(&l);
 
             float *old_weights = l.weights_gpu;
-<<<<<<< HEAD
-            if (l.reverse) {
-                if (*state.net.max_output16_size < l.nweights) {
-                    *state.net.max_output16_size = l.nweights;
-                    if (*state.net.output16_gpu) cuda_free(*state.net.output16_gpu);
-=======
 
             if (l.reverse) {
                 if (*state.net.max_output16_size < l.nweights) {
                     *state.net.max_output16_size = l.nweights;
                     if (*state.net.output16_gpu && *state.net.max_output16_size > 0) cuda_free(*state.net.output16_gpu);
->>>>>>> 17cf4bfbfc49a588e1ef3da5c5d706f72cd1cb10
                     assert(*state.net.max_output16_size > 0);
                     *state.net.output16_gpu = cuda_make_array(NULL, l.nweights);
                 }
@@ -867,11 +860,7 @@ void backward_convolutional_layer_gpu(convolutional_layer l, network_state state
                 l.weights_gpu = *state.net.output16_gpu;
             }
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 17cf4bfbfc49a588e1ef3da5c5d706f72cd1cb10
             // http://docs.nvidia.com/deeplearning/sdk/cudnn-developer-guide/index.html#cudnnConvolutionBackwardData
             // calculate delta for the next layer
             CHECK_CUDNN(cudnnConvolutionBackwardData(cudnn_handle(),
