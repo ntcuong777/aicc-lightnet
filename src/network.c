@@ -278,6 +278,18 @@ void forward_network(network net, network_state state)
         //double time = get_time_point();
         l.forward(l, state);
         //printf("%d - Predicted in %lf milli-seconds.\n", i, ((double)get_time_point() - time) / 1000);
+
+        // DEBUG SAVE
+        {
+            int size = l.outputs;
+            char file[256];
+            sprintf(file, "debug/layer%d_out.bin", i);
+            FILE *f;
+            f = fopen(file, "w");
+            fwrite((void*)l.output, sizeof(char), sizeof(float)*size, f);
+            fclose(f);
+        }
+
         state.input = l.output;
 
         /*

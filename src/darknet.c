@@ -429,6 +429,144 @@ void visualize(char *cfgfile, char *weightfile)
 #endif
 }
 
+void run_export(char *cfgfile, char *weightfile, char *out)
+{
+    network net = parse_network_cfg(cfgfile);
+    if(weightfile){
+        load_weights(&net, weightfile);
+    }
+
+    int i;
+    for(i=0; i<net.n; i++) {
+        layer l = net.layers[i];
+        printf("n: %d, type %d\n", i, l.type);
+        if(l.type == CONVOLUTIONAL) {
+            int wg_num = (l.groups <=  1)? l.n*l.c*l.size*l.size : l.n*(l.c/l.groups)*l.size*l.size;
+            int b_num = l.n;
+         
+            printf("Convolutional\n");
+            printf("weights: %d, biases: %d, batch_normalize: %d, groups: %d\n",
+            wg_num, b_num, l.batch_normalize, l.groups);
+
+            char *file[256];
+            sprintf(file, "%s/c%d.bin", out, i);
+
+            FILE *f;
+            f = fopen(file, "w");
+            printf("write binary %s\n", file);
+            fwrite((void*)l.weights, sizeof(char), sizeof(float)*wg_num, f);
+            fwrite((void*)l.biases, sizeof(char), sizeof(float)*b_num, f);
+            if(l.batch_normalize) {
+                fwrite((void*)l.scales, sizeof(char), sizeof(float)*b_num, f);
+                fwrite((void*)l.rolling_mean, sizeof(char), sizeof(float)*b_num, f);
+                fwrite((void*)l.rolling_variance, sizeof(char), sizeof(float)*b_num, f);
+            }
+            fclose (f);
+        } else if(l.type == REGION) {
+            printf("export REGION\n");
+            int b_num = l.n*2;
+            printf("biases: %d\n",b_num);
+
+            char *file[256];
+            sprintf(file, "%s/g%d.bin", out, i);
+
+            FILE *f;
+            f = fopen(file, "w");
+            printf("write binary %s\n", file);
+            fwrite((void*)l.biases, sizeof(char), sizeof(float)*b_num, f);
+            fclose (f);
+        } else if(l.type == YOLO) {
+            printf("export YOLO\n");
+
+            int b_num = l.total*2;
+            printf("mask: %d\n",l.n);
+            printf("biases: %d\n",b_num);
+
+            char *file[256];
+            sprintf(file, "%s/g%d.bin", out, i);
+
+            // convert mask into float
+            float mask_f[256];
+            for(int m=0; m<l.n; m++) {
+	        	mask_f[m] = l.mask[m];
+	    	    printf("mask %f\n", mask_f[m]);
+            }
+
+            for(int m=0; m<b_num; m++) {
+                printf("anchor %f\n", l.biases[m]);	    
+            }
+
+            FILE *f;
+            f = fopen(file, "w");
+            printf("write binary %s\n", file);
+            fwrite((void*)mask_f, sizeof(char), sizeof(float)*l.n, f);
+            fwrite((void*)l.biases, sizeof(char), sizeof(float)*b_num, f);
+            fclose (f);
+
+        } else if(l.type == SHORTCUT) {
+            printf("export SHORTCUT\n");
+            // no weights
+        } else if(l.type == ROUTE) {
+            printf("export ROUTE\n");
+            // no weights
+        } else if(l.type == UPSAMPLE) {
+            printf("export UPSAMPLE\n");
+            // no weights 
+        } else if(l.type == MAXPOOL) {
+            printf("export MAXPOOL\n");
+            // no weights 
+        } else if(l.type == REORG || l.type == REORG_OLD) {
+            printf("export REORG\n");
+            // no weights          
+        } else {
+            assert(0 == "layer type not supported for export");
+        }
+        printf("\n");
+    }
+
+    // export input and output of net
+    set_batch_network(&net, 1);
+    double time;
+   
+    image im = load_image_color("data/dog.jpg",0,0);
+    image sized = letterbox_image(im, net.w, net.h);
+    
+    layer l = net.layers[net.n-1];
+    float *X = sized.data;
+    
+    //////////////////
+    {
+        char *file[256];
+        sprintf(file, "%s/input.bin", out);
+
+        FILE *f;
+        f = fopen(file, "w");
+        int size = net.inputs;
+        printf("\nnetwork input size: %d\n", size);
+        fwrite((void*)X, sizeof(char), sizeof(float)*size, f);
+        fclose (f);
+    }
+    //////////////////
+    
+    time=what_time_is_it_now();
+    network_predict(net, X);
+    printf("Predicted in %f seconds.\n", what_time_is_it_now()-time);
+
+    //////////////////
+    {
+        char *file[256];
+        sprintf(file, "%s/output.bin", out);
+
+        FILE *f;
+        f = fopen(file, "w");
+        int size = l.outputs;
+        printf("\nnetworks output size: %d\n", size);
+        fwrite((void*)l.output, sizeof(char), sizeof(float)*size, f);
+        fclose (f);
+    }
+    //////////////////
+}
+
 int main(int argc, char **argv)
 {
 #ifdef _DEBUG
@@ -550,6 +688,8 @@ int main(int argc, char **argv)
         partial(argv[2], argv[3], argv[4], atoi(argv[5]));
     } else if (0 == strcmp(argv[1], "visualize")){
         visualize(argv[2], (argc > 3) ? argv[3] : 0);
+    } else if (0 == strcmp(argv[1], "export")){
+        run_export(argv[2], (argc > 3) ? argv[3] : 0, argv[4]);
     } else if (0 == strcmp(argv[1], "imtest")){
         test_resize(argv[2]);
     } else {
