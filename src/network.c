@@ -1057,6 +1057,35 @@ float *network_predict_image(network *net, image im)
 
 det_num_pair* network_predict_batch(network *net, image im, int batch_size, int w, int h, float thresh, float hier, int *map, int relative, int letter)
 {
+    //
+    // This part performs some resize operation on the input image batch.
+    // However, it is not really memory efficient, so it is still recommended
+    // to resize before passing the input here.
+    // Status: untested.
+    //
+    if (im.w != net->w && im.h != net->h) { // input has different dimension, perform a resize
+        image im_res;
+        im_res.w = net->w;
+        im_res.h = net->h;
+        im_res.c = net->c;
+        im_res.data = (float*)xcalloc(batch_size * im_res.h * im_res.w * im_res.c, sizeof(float));
+        int i = 0, step = im.w*im.h*im.c;
+        float *img_ptr = im.data;
+        for (i = 0; i < batch_size; ++i, img_ptr += step) {
+            image t_img;
+            t_img.w = im.w;
+            t_img.h = im.h;
+            t_img.c = im.c;
+            t_img.data = img_ptr;
+            image res = resize_image(t_img, net->w, net->h);
+            *(im_res.data + i*step) = *res.data;
+            free_image(res);
+        }
+        //done resize, free old image
+        free_image(im);
+        im.data = im_res.data; // assign the location of the resized image to the input
+    }
+
     network_predict(*net, im.data);
     det_num_pair *pdets = (struct det_num_pair *)calloc(batch_size, sizeof(det_num_pair));
     int num;
