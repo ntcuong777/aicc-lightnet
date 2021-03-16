@@ -41,6 +41,11 @@ static float get_pixel(image m, int x, int y, int c)
     assert(x < m.w && y < m.h && c < m.c);
     return m.data[c*m.h*m.w + y*m.w + x];
 }
+static float get_pixel_batch(image_batch m, int b, int x, int y, int c)
+{
+    assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
+    return m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x];
+}
 static float get_pixel_extend(image m, int x, int y, int c)
 {
     if (x < 0 || x >= m.w || y < 0 || y >= m.h) return 0;
@@ -59,10 +64,21 @@ static void set_pixel(image m, int x, int y, int c, float val)
     assert(x < m.w && y < m.h && c < m.c);
     m.data[c*m.h*m.w + y*m.w + x] = val;
 }
+static void set_pixel_batch(image_batch m, int b, int x, int y, int c, float val)
+{
+    if (b < 0 || x < 0 || y < 0 || c < 0 || b > m.b || x >= m.batch.w || y >= m.batch.h || c >= m.batch.c) return;
+    assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
+    m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] = val;
+}
 static void add_pixel(image m, int x, int y, int c, float val)
 {
     assert(x < m.w && y < m.h && c < m.c);
     m.data[c*m.h*m.w + y*m.w + x] += val;
+}
+static void add_pixel_batch(image_batch m, int b, int x, int y, int c, float val)
+{
+    assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
+    m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] += val;
 }
 
 void composite_image(image source, image dest, int dx, int dy)
@@ -690,6 +706,14 @@ image copy_image(image p)
     return copy;
 }
 
+image_batch copy_image_batch(image_batch p)
+{
+    image_batch copy = p;
+    copy.batch.data = (float*)xcalloc(p.b * p.batch.h * p.batch.w * p.batch.c, sizeof(float));
+    memcpy(copy.data, p.data, p.b*p.batch.h*p.batch.w*p.batch.c*sizeof(float));
+    return copy;
+}
+
 void rgbgr_image(image im)
 {
     int i;
@@ -791,10 +815,28 @@ image make_empty_image(int w, int h, int c)
     return out;
 }
 
+image_batch make_empty_image_batch(int b, int w, int h, int c)
+{
+    image_batch out;
+    out.batch.data = 0;
+    out.b = b;
+    out.batch.h = h;
+    out.batch.w = w;
+    out.batch.c = c;
+    return out;
+}
+
 image make_image(int w, int h, int c)
 {
     image out = make_empty_image(w,h,c);
     out.data = (float*)xcalloc(h * w * c, sizeof(float));
+    return out;
+}
+
+image_batch make_image_batch(int b, int w, int h, int c)
+{
+    image_batch out = make_empty_image_batch(b,w,h,c);
+    out.batch.data = (float*)xcalloc(b * h * w * c, sizeof(float));
     return out;
 }
 
@@ -1432,6 +1474,60 @@ image resize_image(image im, int w, int h)
     return resized;
 }
 
+image_batch resize_image_batch(image_batch im, int w, int h)
+{
+    // I choose to return the input itself just for more efficient memory use
+    // If that causes a future bug, I will implement a copy_image_batch function
+    //
+    //if (im.batch.w == w && im.batch.h == h) return copy_image_batch(im);
+    if (im.batch.w == w && im.batch.h == h) return im;
+
+    image resized = make_image_batch(im.b, w, h, im.batch.c);
+    image part = make_image_batch(im.b, w, im.batch.h, im.batch.c);
+    int r, c, k, b;
+    float w_scale = (float)(im.batch.w - 1) / (w - 1);
+    float h_scale = (float)(im.batch.h - 1) / (h - 1);
+    for (b = 0; b < im.b; ++b) {
+        for(k = 0; k < im.batch.c; ++k){
+            for(r = 0; r < im.batch.h; ++r){
+                for(c = 0; c < w; ++c){
+                    float val = 0;
+                    if(c == w-1 || im.batch.w == 1){
+                        val = get_pixel_batch(im, b, im.w-1, r, k);
+                    } else {
+                        float sx = c*w_scale;
+                        int ix = (int) sx;
+                        float dx = sx - ix;
+                        val = (1 - dx) * get_pixel_batch(im, b, ix, r, k) + dx * get_pixel_batch(im, b, ix+1, r, k);
+                    }
+                    set_pixel_batch(part, b, c, r, k, val);
+                }
+            }
+        }
+    }
+    for (b = 0; b < im.b; ++b) {
+        for(k = 0; k < im.batch.c; ++k){
+            for(r = 0; r < h; ++r){
+                float sy = r*h_scale;
+                int iy = (int) sy;
+                float dy = sy - iy;
+                for(c = 0; c < w; ++c){
+                    float val = (1-dy) * get_pixel_batch(part, b, c, iy, k);
+                    set_pixel_batch(resized, b, c, r, k, val);
+                }
+                if(r == h-1 || im.batch.h == 1) continue;
+                for(c = 0; c < w; ++c){
+                    float val = dy * get_pixel_batch(part, b, c, iy+1, k);
+                    add_pixel_batch(resized, b, c, r, k, val);
+                }
+            }
+        }
+    }
+
+    free_image_batch(part);
+    return resized;
+}
+
 
 void test_resize(char *filename)
 {
@@ -1686,6 +1782,12 @@ void free_image(image m)
     }
 }
 
+LIB_API void free_image_batch(image_batch m) {
+    if(m.batch.data) {
+        free(m.batch.data);
+    }
+}
+
 // Fast copy data from a contiguous byte array into the image.
 LIB_API void copy_image_from_bytes(image im, char *pdata)
 {
@@ -1700,6 +1802,31 @@ LIB_API void copy_image_from_bytes(image im, char *pdata)
                 int dst_index = i + w * j + w * h*k;
                 int src_index = k + c * i + c * w*j;
                 im.data[dst_index] = (float)data[src_index] / 255.;
+            }
+        }
+    }
+}
+
+// im: a variable of type `image_batch` that store the batch of images
+// *pdata: a pointer to a contiguous byte array that represents the batch of images
+//
+// im's shape: [N, C, H, W]
+// *pdata's shape: [N, H, W, C]
+LIB_API void copy_image_batch_from_bytes(image_batch im_batch, char *pdata) {
+    unsigned char *data = (unsigned char*)pdata;
+    int b, i, k, j;
+    int n = im_batch.b;
+    int w = im_batch.batch.w;
+    int h = im_batch.batch.h;
+    int c = im_batch.batch.c;
+    for (b = 0; b < n; ++b) {
+        for (k = 0; k < c; ++k) {
+            for (j = 0; j < h; ++j) {
+                for (i = 0; i < w; ++i) {
+                    int dst_index = i + w * j + w * h*k + w * h * c*b;
+                    int src_index = k + c * i + c * w*j + c * w * h*b;
+                    im_batch.batch.data[dst_index] = (float)data[src_index] / 255.;
+                }
             }
         }
     }

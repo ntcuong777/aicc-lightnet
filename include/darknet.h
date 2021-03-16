@@ -63,6 +63,9 @@ typedef struct layer layer;
 struct image;
 typedef struct image image;
 
+struct image_batch;
+typedef struct image_batch image_batch;
+
 struct detection;
 typedef struct detection detection;
 
@@ -856,6 +859,11 @@ typedef struct image {
     float *data;
 } image;
 
+typedef struct image_batch {
+    int b;
+    image batch;
+} image_batch;
+
 //typedef struct {
 //    int w;
 //    int h;
@@ -1025,6 +1033,7 @@ LIB_API float *network_predict(network net, float *input);
 LIB_API float *network_predict_ptr(network *net, float *input);
 LIB_API detection *get_network_boxes(network *net, int w, int h, float thresh, float hier, int *map, int relative, int *num, int letter);
 LIB_API det_num_pair* network_predict_batch(network *net, image im, int batch_size, int w, int h, float thresh, float hier, int *map, int relative, int letter);
+LIB_API det_num_pair* network_predict_batch_modified(network *net, image_batch im, int batch_size, int w, int h, float thresh, float hier, int *map, int relative, int letter);
 LIB_API void free_detections(detection *dets, int n);
 LIB_API void free_batch_detections(det_num_pair *det_num_pairs, int n);
 LIB_API void fuse_conv_batchnorm(network net);
@@ -1049,13 +1058,17 @@ LIB_API void optimize_picture(network *net, image orig, int max_layer, float sca
 LIB_API void make_image_red(image im);
 LIB_API image make_attention_image(int img_size, float *original_delta_cpu, float *original_input_cpu, int w, int h, int c);
 LIB_API image resize_image(image im, int w, int h);
+LIB_API image_batch resize_image_batch(image_batch im, int w, int h);
 LIB_API void quantize_image(image im);
 LIB_API void copy_image_from_bytes(image im, char *pdata);
+LIB_API void copy_image_batch_from_bytes(image_batch im, char *pdata);
 LIB_API image letterbox_image(image im, int w, int h);
 LIB_API void rgbgr_image(image im);
 LIB_API image make_image(int w, int h, int c);
+LIB_API image_batch make_image_batch(int b, int w, int h, int c);
 LIB_API image load_image_color(char *filename, int w, int h);
 LIB_API void free_image(image m);
+LIB_API void free_image_batch(image_batch m);
 LIB_API image crop_image(image im, int dx, int dy, int w, int h);
 LIB_API image resize_min(image im, int min);
 

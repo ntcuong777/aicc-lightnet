@@ -60,6 +60,11 @@ class IMAGE(Structure):
                 ("data", POINTER(c_float))]
 
 
+class IMAGE_BATCH(Structure):
+    _fields_ = [("b", c_int),
+                ("batch", IMAGE)]
+
+
 class METADATA(Structure):
     _fields_ = [("classes", c_int),
                 ("names", POINTER(c_char_p))]
@@ -231,6 +236,9 @@ lib.network_height.restype = c_int
 copy_image_from_bytes = lib.copy_image_from_bytes
 copy_image_from_bytes.argtypes = [IMAGE,c_char_p]
 
+copy_image_batch_from_bytes = lib.copy_image_batch_from_bytes
+copy_image_batch_from_bytes.argtypes = [IMAGE_BATCH,c_char_p]
+
 predict = lib.network_predict_ptr
 predict.argtypes = [c_void_p, POINTER(c_float)]
 predict.restype = POINTER(c_float)
@@ -244,6 +252,10 @@ init_cpu = lib.init_cpu
 make_image = lib.make_image
 make_image.argtypes = [c_int, c_int, c_int]
 make_image.restype = IMAGE
+
+make_image_batch = lib.make_image_batch
+make_image_batch.argtypes = [c_int, c_int, c_int, c_int]
+make_image_batch.restype = IMAGE_BATCH
 
 get_network_boxes = lib.get_network_boxes
 get_network_boxes.argtypes = [c_void_p, c_int, c_int, c_float, c_float, POINTER(c_int), c_int, POINTER(c_int), c_int]
@@ -289,6 +301,9 @@ do_nms_sort.argtypes = [POINTER(DETECTION), c_int, c_int, c_float]
 free_image = lib.free_image
 free_image.argtypes = [IMAGE]
 
+free_image_batch = lib.free_image_batch
+free_image_batch.argtypes = [IMAGE_BATCH]
+
 letterbox_image = lib.letterbox_image
 letterbox_image.argtypes = [IMAGE, c_int, c_int]
 letterbox_image.restype = IMAGE
@@ -316,3 +331,8 @@ network_predict_batch = lib.network_predict_batch
 network_predict_batch.argtypes = [c_void_p, IMAGE, c_int, c_int, c_int,
                                    c_float, c_float, POINTER(c_int), c_int, c_int]
 network_predict_batch.restype = POINTER(DETNUMPAIR)
+
+network_predict_batch_modified = lib.network_predict_batch_modified
+network_predict_batch_modified.argtypes = [c_void_p, IMAGE_BATCH, c_int, c_int, c_int,
+                                   c_float, c_float, POINTER(c_int), c_int, c_int]
+network_predict_batch_modified.restype = POINTER(DETNUMPAIR)
