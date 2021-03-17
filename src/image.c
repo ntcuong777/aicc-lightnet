@@ -44,7 +44,7 @@ static float get_pixel(image m, int x, int y, int c)
 static float get_pixel_batch(image_batch m, int b, int x, int y, int c)
 {
     assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
-    return m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x];
+    return m.batch.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x];
 }
 static float get_pixel_extend(image m, int x, int y, int c)
 {
@@ -68,7 +68,7 @@ static void set_pixel_batch(image_batch m, int b, int x, int y, int c, float val
 {
     if (b < 0 || x < 0 || y < 0 || c < 0 || b > m.b || x >= m.batch.w || y >= m.batch.h || c >= m.batch.c) return;
     assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
-    m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] = val;
+    m.batch.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] = val;
 }
 static void add_pixel(image m, int x, int y, int c, float val)
 {
@@ -78,7 +78,7 @@ static void add_pixel(image m, int x, int y, int c, float val)
 static void add_pixel_batch(image_batch m, int b, int x, int y, int c, float val)
 {
     assert(b < m.b && x < m.batch.w && y < m.batch.h && c < m.batch.c);
-    m.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] += val;
+    m.batch.data[b*m.batch.c*m.batch.h*m.batch.w + c*m.batch.h*m.batch.w + y*m.batch.w + x] += val;
 }
 
 void composite_image(image source, image dest, int dx, int dy)
@@ -710,7 +710,7 @@ image_batch copy_image_batch(image_batch p)
 {
     image_batch copy = p;
     copy.batch.data = (float*)xcalloc(p.b * p.batch.h * p.batch.w * p.batch.c, sizeof(float));
-    memcpy(copy.data, p.data, p.b*p.batch.h*p.batch.w*p.batch.c*sizeof(float));
+    memcpy(copy.batch.data, p.batch.data, p.b*p.batch.h*p.batch.w*p.batch.c*sizeof(float));
     return copy;
 }
 
@@ -1482,8 +1482,8 @@ image_batch resize_image_batch(image_batch im, int w, int h)
     //if (im.batch.w == w && im.batch.h == h) return copy_image_batch(im);
     if (im.batch.w == w && im.batch.h == h) return im;
 
-    image resized = make_image_batch(im.b, w, h, im.batch.c);
-    image part = make_image_batch(im.b, w, im.batch.h, im.batch.c);
+    image_batch resized = make_image_batch(im.b, w, h, im.batch.c);
+    image_batch part = make_image_batch(im.b, w, im.batch.h, im.batch.c);
     int r, c, k, b;
     float w_scale = (float)(im.batch.w - 1) / (w - 1);
     float h_scale = (float)(im.batch.h - 1) / (h - 1);
@@ -1493,7 +1493,7 @@ image_batch resize_image_batch(image_batch im, int w, int h)
                 for(c = 0; c < w; ++c){
                     float val = 0;
                     if(c == w-1 || im.batch.w == 1){
-                        val = get_pixel_batch(im, b, im.w-1, r, k);
+                        val = get_pixel_batch(im, b, im.batch.w-1, r, k);
                     } else {
                         float sx = c*w_scale;
                         int ix = (int) sx;
